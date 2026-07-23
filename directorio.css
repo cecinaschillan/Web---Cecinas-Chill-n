@@ -1,0 +1,495 @@
+/* ========================================
+   PÁGINA DIRECTORIO · CECINAS CHILLÁN
+   Cargar después de styles.css
+   No modifica el header principal
+======================================== */
+
+.contact-directory-page {
+  background: #1d1d1d;
+}
+
+.cc-directory-main {
+  display: block;
+  min-height: 0;
+}
+
+.cc-directory-icons {
+  position: absolute;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+}
+
+.navigation-group a.is-current::after {
+  transform: scaleX(1);
+}
+
+/* ========================================
+   SECCIÓN PRINCIPAL
+======================================== */
+
+.cc-directory-section {
+  position: relative;
+  width: 100%;
+  min-height: auto;
+  padding: clamp(86px, 7vw, 112px) 24px clamp(64px, 6vw, 86px);
+  overflow: hidden;
+  isolation: isolate;
+  background: #4d1208;
+}
+
+.cc-directory-section::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  background:
+    linear-gradient(90deg, rgba(83, 13, 0, 0.62) 0%, rgba(191, 53, 7, 0.38) 46%, rgba(40, 8, 3, 0.68) 100%),
+    linear-gradient(180deg, rgba(24, 6, 0, 0.10) 0%, rgba(24, 6, 0, 0.56) 100%),
+    url("portada-web-2024.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  pointer-events: none;
+  transform: scale(1.015);
+}
+
+.cc-directory-section::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  background:
+    radial-gradient(circle at 8% 0%, rgba(255, 98, 0, 0.26), transparent 30%),
+    radial-gradient(circle at 94% 84%, rgba(220, 42, 32, 0.24), transparent 32%),
+    linear-gradient(180deg, transparent 0%, rgba(24, 6, 0, 0.22) 100%);
+  pointer-events: none;
+}
+
+.cc-directory-background,
+.cc-directory-overlay,
+.cc-directory-decoration {
+  display: none !important;
+}
+
+.cc-directory-shell {
+  position: relative;
+  z-index: 3;
+  width: min(1120px, 100%);
+  margin: 0 auto;
+}
+
+/* ========================================
+   ENCABEZADO
+======================================== */
+
+.cc-directory-heading {
+  max-width: 760px;
+  margin: 0 auto clamp(30px, 4vw, 46px);
+  color: #ffffff;
+  text-align: center;
+}
+
+.cc-directory-kicker {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 34px;
+  padding: 0 16px;
+  margin-bottom: 14px;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  background: rgba(0, 0, 0, 0.24);
+  color: rgba(255, 255, 255, 0.94);
+  font-size: 10px;
+  line-height: 1;
+  font-weight: 900;
+  letter-spacing: 0.13em;
+  text-transform: uppercase;
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+}
+
+.cc-directory-heading h1 {
+  margin: 0 0 14px;
+  color: #ffffff;
+  font-family: var(--cc-font-title-final, "CC Futurxkc", Impact, sans-serif);
+  font-size: clamp(48px, 5vw, 76px);
+  line-height: 0.9;
+  font-weight: 400;
+  letter-spacing: -0.045em;
+  text-shadow: 0 10px 30px rgba(43, 8, 0, 0.38);
+  text-wrap: balance;
+}
+
+.cc-directory-heading p {
+  max-width: 620px;
+  margin: 0 auto;
+  color: rgba(255, 255, 255, 0.86);
+  font-size: clamp(14px, 1.1vw, 17px);
+  line-height: 1.52;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  text-shadow: 0 4px 16px rgba(43, 8, 0, 0.42);
+}
+
+/* ========================================
+   GRILLA
+======================================== */
+
+.cc-directory-grid {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+  align-items: stretch;
+  margin: 0;
+  padding: 0;
+}
+
+/* ========================================
+   TARJETAS
+======================================== */
+
+.cc-directory-card {
+  position: relative;
+  min-width: 0;
+  min-height: 132px;
+  height: 100%;
+  margin: 0;
+  padding: 18px 18px 42px;
+  display: grid;
+  grid-template-columns: 50px minmax(0, 1fr);
+  gap: 14px;
+  align-items: start;
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.96);
+  color: #1d1d1d;
+  border: 1px solid rgba(255, 255, 255, 0.74);
+  box-shadow:
+    0 18px 36px rgba(57, 15, 0, 0.25),
+    inset 0 1px 0 rgba(255, 255, 255, 0.92);
+  overflow: hidden;
+  transition: transform 0.23s ease, box-shadow 0.23s ease, border-color 0.23s ease;
+}
+
+.cc-directory-card::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  height: 4px;
+  background: linear-gradient(90deg, var(--orange, #ff6200) 0%, var(--red, #dc2a20) 100%);
+  opacity: 0;
+  transition: opacity 0.23s ease;
+}
+
+.cc-directory-card.is-clickable {
+  cursor: pointer;
+  user-select: none;
+}
+
+.cc-directory-card:hover,
+.cc-directory-card.is-clickable:focus-visible {
+  transform: translateY(-5px);
+  border-color: rgba(220, 42, 32, 0.34);
+  box-shadow:
+    0 25px 48px rgba(57, 15, 0, 0.32),
+    0 0 0 5px rgba(255, 98, 0, 0.10),
+    inset 0 1px 0 rgba(255, 255, 255, 0.94);
+}
+
+.cc-directory-card:hover::after,
+.cc-directory-card.is-clickable:focus-visible::after {
+  opacity: 1;
+}
+
+.cc-directory-card.is-clickable:active {
+  transform: translateY(-1px) scale(0.985);
+}
+
+.cc-directory-card.is-clickable::before {
+  content: "Enviar correo";
+  position: absolute;
+  right: 14px;
+  bottom: 12px;
+  z-index: 4;
+  min-height: 24px;
+  padding: 0 10px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 999px;
+  background: linear-gradient(90deg, var(--orange, #ff6200) 0%, var(--red, #dc2a20) 100%);
+  color: #ffffff;
+  font-size: 7px;
+  line-height: 1;
+  font-weight: 900;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  opacity: 0;
+  transform: translateY(4px);
+  pointer-events: none;
+  transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+.cc-directory-card.is-clickable:hover::before,
+.cc-directory-card.is-clickable:focus-visible::before {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.cc-directory-card-icon {
+  width: 50px;
+  height: 50px;
+  display: grid;
+  place-items: center;
+  border-radius: 14px;
+  color: #ffffff;
+  background: linear-gradient(145deg, var(--orange, #ff6200) 0%, var(--red, #dc2a20) 100%);
+  box-shadow: 0 10px 20px rgba(220, 42, 32, 0.26);
+}
+
+.cc-directory-card-icon svg {
+  width: 25px;
+  height: 25px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.7;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.cc-directory-card-content {
+  min-width: 0;
+}
+
+.cc-directory-card-content::after {
+  display: none !important;
+}
+
+.cc-directory-card h2 {
+  margin: 1px 0 6px;
+  color: #1d1d1d;
+  font-size: 16px;
+  line-height: 1.08;
+  font-weight: 900;
+  letter-spacing: -0.025em;
+}
+
+.cc-directory-card p {
+  margin: 0 0 12px;
+  color: #747982;
+  font-size: 9.5px;
+  line-height: 1.25;
+  font-weight: 900;
+  letter-spacing: 0.045em;
+  text-transform: uppercase;
+}
+
+.cc-directory-card a {
+  min-width: 0;
+  display: flex;
+  align-items: flex-start;
+  gap: 7px;
+  color: #626872;
+  font-size: 10.5px;
+  line-height: 1.3;
+  font-weight: 700;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.cc-directory-card a:hover {
+  color: var(--red, #dc2a20);
+}
+
+.cc-directory-card a svg {
+  width: 14px;
+  height: 14px;
+  margin-top: 1px;
+  flex-shrink: 0;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.7;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.cc-directory-card a span {
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+
+.cc-directory-card a:focus-visible,
+.cc-directory-card.is-clickable:focus-visible {
+  outline: 3px solid rgba(255, 98, 0, 0.36);
+  outline-offset: 4px;
+  border-radius: 8px;
+}
+
+/* ========================================
+   FOOTER EN PÁGINA DIRECTORIO
+======================================== */
+
+.contact-directory-page .cc-footer {
+  position: relative;
+  width: 100%;
+  margin: 0 !important;
+  padding: 58px 24px 28px !important;
+  clear: both;
+  overflow: hidden;
+  background: #1d1d1d !important;
+  border-top: 0 !important;
+}
+
+.contact-directory-page .cc-footer::before {
+  content: "" !important;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 17px;
+  background: linear-gradient(90deg, #857550 0%, #857550 37%, #f1efeb 55%, #8c7d5a 79%, #857550 100%);
+  z-index: 3;
+}
+
+.contact-directory-page .cc-footer::after {
+  content: none !important;
+  display: none !important;
+}
+
+.contact-directory-page .cc-footer-shell {
+  position: relative;
+  z-index: 4;
+  margin: 0 auto;
+  padding-top: 0 !important;
+  align-items: start;
+}
+
+.contact-directory-page .cc-footer-column,
+.contact-directory-page .cc-footer-brand {
+  position: relative;
+  top: auto;
+  margin: 0;
+  padding: 0;
+  transform: none;
+}
+
+.contact-directory-page .cc-footer-column h3 {
+  position: static;
+  margin: 0 0 24px !important;
+  padding: 0;
+  transform: none;
+  color: var(--orange, #ff6200) !important;
+  font-size: 22px;
+  line-height: 1;
+  font-weight: 900;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.contact-directory-page .cc-footer-copy {
+  margin: 32px auto 0 !important;
+  padding: 0 !important;
+}
+
+/* ========================================
+   RESPONSIVE
+======================================== */
+
+@media (max-width: 1050px) {
+  .cc-directory-section {
+    padding: 82px 22px 60px;
+  }
+
+  .cc-directory-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 680px) {
+  .cc-directory-section {
+    padding: 74px 18px 48px;
+  }
+
+  .cc-directory-heading {
+    margin-bottom: 26px;
+  }
+
+  .cc-directory-heading h1 {
+    font-size: clamp(38px, 12vw, 54px);
+    line-height: 0.94;
+  }
+
+  .cc-directory-heading p {
+    font-size: 14px;
+  }
+
+  .cc-directory-grid {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  .cc-directory-card {
+    min-height: 112px;
+    height: auto;
+    padding: 16px 16px 44px;
+    grid-template-columns: 48px minmax(0, 1fr);
+    gap: 13px;
+    border-radius: 16px;
+  }
+
+  .cc-directory-card-icon {
+    width: 48px;
+    height: 48px;
+  }
+
+  .cc-directory-card h2 {
+    font-size: 15px;
+  }
+
+  .cc-directory-card a {
+    font-size: 10px;
+  }
+
+  .cc-directory-card.is-clickable::before {
+    opacity: 1;
+    transform: none;
+  }
+
+  .contact-directory-page .cc-footer {
+    padding: 48px 20px 26px !important;
+  }
+
+  .contact-directory-page .cc-footer-column h3 {
+    margin-bottom: 18px !important;
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 390px) {
+  .cc-directory-card {
+    grid-template-columns: 1fr;
+  }
+
+  .cc-directory-card-icon {
+    width: 44px;
+    height: 44px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .cc-directory-card,
+  .cc-directory-card::before,
+  .cc-directory-card::after {
+    transition: none;
+  }
+
+  .cc-directory-card:hover,
+  .cc-directory-card.is-clickable:focus-visible {
+    transform: none;
+  }
+}

@@ -1,0 +1,2860 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <meta
+    name="description"
+    content="Cecinas Chillán. Tradición, calidad y sabor desde 1987."
+  >
+
+  <title>Cecinas Chillán | Por tradición... ¡Ud. sabe!</title>
+
+  <link rel="icon" type="image/png" href="Isotipo.png">
+  <link rel="apple-touch-icon" href="Imagotipo.png">
+
+  <link rel="stylesheet" href="styles.css">
+
+<style id="cc-productos-lectura-margenes-final">
+/* =========================================================
+   PRODUCTOS — FIX LECTURA, MÁRGENES Y JERARQUÍA FINAL
+   Pegar al FINAL del CSS
+========================================================= */
+
+#productos.cc-catalog-section {
+  padding-top: clamp(132px, 10vw, 164px) !important;
+  padding-bottom: 92px !important;
+  overflow: hidden !important;
+  scroll-margin-top: calc(var(--navigation-height, 116px) + 28px) !important;
+}
+
+#productos .cc-catalog-shell {
+  width: min(1180px, calc(100% - 96px)) !important;
+  margin: 0 auto !important;
+  display: grid !important;
+  grid-template-columns: 280px minmax(0, 1fr) !important;
+  gap: 28px !important;
+  align-items: start !important;
+  box-sizing: border-box !important;
+}
+
+#productos .cc-catalog-sidebar {
+  position: sticky !important;
+  top: calc(var(--navigation-height, 116px) + 22px) !important;
+  max-height: calc(100vh - 154px) !important;
+  overflow-y: auto !important;
+  padding: 22px 18px 20px !important;
+  border-radius: 32px !important;
+}
+
+#productos .cc-catalog-brand img {
+  width: 76px !important;
+  max-width: 76px !important;
+  height: auto !important;
+}
+
+#productos .cc-catalog-brand p {
+  margin: 0 !important;
+  font-size: 22px !important;
+  line-height: 0.95 !important;
+  font-weight: 900 !important;
+  letter-spacing: 0.015em !important;
+  text-transform: uppercase !important;
+  color: #8f7a4d !important;
+}
+
+#productos .cc-catalog-side-label {
+  margin-bottom: 12px !important;
+  font-size: 9px !important;
+  line-height: 1 !important;
+  letter-spacing: 0.16em !important;
+}
+
+#productos .cc-catalog-category {
+  min-height: 50px !important;
+  padding: 9px 14px !important;
+  grid-template-columns: minmax(0, 1fr) 12px !important;
+  gap: 9px !important;
+  border-radius: 16px !important;
+}
+
+#productos .cc-catalog-category-icon,
+#productos .cc-catalog-heart {
+  display: none !important;
+}
+
+#productos .cc-catalog-category strong {
+  font-size: 13.8px !important;
+  line-height: 1.12 !important;
+  letter-spacing: -0.01em !important;
+  white-space: normal !important;
+  word-break: normal !important;
+  overflow-wrap: normal !important;
+  hyphens: none !important;
+}
+
+#productos .cc-catalog-category em {
+  font-size: 16px !important;
+}
+
+#productos .cc-catalog-header {
+  max-width: 720px !important;
+  margin: 0 0 24px !important;
+}
+
+#productos .cc-catalog-header span {
+  margin-bottom: 8px !important;
+  font-size: 9px !important;
+  line-height: 1 !important;
+  letter-spacing: 0.17em !important;
+}
+
+#productos .cc-catalog-header h2 {
+  max-width: none !important;
+  margin: 0 0 8px !important;
+  font-size: clamp(38px, 4.2vw, 64px) !important;
+  line-height: 0.9 !important;
+  letter-spacing: -0.045em !important;
+}
+
+#productos .cc-catalog-header p {
+  max-width: 520px !important;
+  font-size: 13.5px !important;
+  line-height: 1.34 !important;
+}
+
+#productos .cc-catalog-showcase {
+  width: 100% !important;
+  min-width: 0 !important;
+  display: grid !important;
+  grid-template-columns: 110px minmax(0, 1fr) 110px !important;
+  gap: 16px !important;
+  align-items: center !important;
+  overflow: visible !important;
+}
+
+#productos .cc-catalog-feature-card {
+  width: 100% !important;
+  min-width: 0 !important;
+  min-height: 500px !important;
+  height: auto !important;
+  display: grid !important;
+  grid-template-columns: minmax(0, 1.08fr) minmax(260px, 0.92fr) !important;
+  border-radius: 34px !important;
+  overflow: hidden !important;
+}
+
+#productos .cc-catalog-card-info {
+  min-width: 0 !important;
+  padding: 34px 34px 32px !important;
+  justify-content: center !important;
+}
+
+#productos .cc-catalog-card-kicker {
+  margin-bottom: 14px !important;
+  gap: 8px !important;
+}
+
+#productos .cc-catalog-card-kicker span {
+  font-size: 9.5px !important;
+  line-height: 1 !important;
+  letter-spacing: 0.15em !important;
+  white-space: normal !important;
+}
+
+#productos .cc-catalog-featured {
+  padding: 6px 9px !important;
+  font-size: 10px !important;
+  line-height: 1 !important;
+}
+
+#productos .cc-catalog-feature-card h3,
+#productos .cc-catalog-card-info h3 {
+  max-width: 100% !important;
+  margin: 0 0 16px !important;
+  font-size: clamp(34px, 3.2vw, 54px) !important;
+  line-height: 0.92 !important;
+  letter-spacing: -0.04em !important;
+  white-space: normal !important;
+  word-break: normal !important;
+  overflow-wrap: normal !important;
+  hyphens: none !important;
+}
+
+#productos .cc-catalog-feature-card p,
+#productos .cc-catalog-card-info p {
+  max-width: 430px !important;
+  margin: 0 0 22px !important;
+  font-size: 14.5px !important;
+  line-height: 1.42 !important;
+  letter-spacing: 0 !important;
+  white-space: normal !important;
+  word-break: normal !important;
+  overflow-wrap: normal !important;
+}
+
+#productos .cc-catalog-format {
+  margin-bottom: 22px !important;
+  gap: 10px !important;
+}
+
+#productos .cc-catalog-format strong {
+  min-height: 36px !important;
+  padding: 0 14px !important;
+  font-size: 13px !important;
+}
+
+#productos .cc-catalog-format span {
+  font-size: 12px !important;
+}
+
+#productos .cc-catalog-actions {
+  align-items: center !important;
+  gap: 0 !important;
+}
+
+#productos .cc-catalog-consult {
+  min-width: 146px !important;
+  min-height: 48px !important;
+  padding: 0 24px !important;
+}
+
+#productos .cc-catalog-card-image {
+  min-height: 500px !important;
+  padding: 32px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+
+#productos .cc-catalog-card-image img {
+  width: auto !important;
+  height: auto !important;
+  max-width: min(88%, 340px) !important;
+  max-height: 390px !important;
+  object-fit: contain !important;
+  object-position: center !important;
+}
+
+#productos .cc-catalog-side-card {
+  height: 318px !important;
+  min-height: 318px !important;
+  border-radius: 26px !important;
+  opacity: 0.55 !important;
+  overflow: hidden !important;
+}
+
+#productos .cc-catalog-side-thumb {
+  height: 150px !important;
+  padding: 14px !important;
+}
+
+#productos .cc-catalog-side-thumb img {
+  width: auto !important;
+  height: auto !important;
+  max-width: 100% !important;
+  max-height: 120px !important;
+  object-fit: contain !important;
+}
+
+#productos .cc-catalog-side-body {
+  padding: 14px !important;
+}
+
+#productos .cc-catalog-side-body span {
+  font-size: 7.8px !important;
+  line-height: 1.1 !important;
+  letter-spacing: 0.10em !important;
+}
+
+#productos .cc-catalog-side-body strong {
+  font-size: 18px !important;
+  line-height: 0.96 !important;
+  letter-spacing: -0.03em !important;
+  white-space: normal !important;
+  word-break: normal !important;
+  overflow-wrap: normal !important;
+}
+
+#productos .cc-catalog-side-body p {
+  font-size: 10.5px !important;
+  line-height: 1.28 !important;
+}
+
+#productos .cc-catalog-controls {
+  margin-top: 20px !important;
+}
+
+#productos .cc-catalog-attributes {
+  margin-top: 24px !important;
+  grid-template-columns: repeat(4, minmax(0, 1fr)) !important;
+  gap: 12px !important;
+}
+
+#productos .cc-catalog-attributes article {
+  min-height: 78px !important;
+  padding: 15px !important;
+  border-radius: 20px !important;
+}
+
+#productos .cc-catalog-attributes strong {
+  font-size: 11.5px !important;
+  line-height: 1.12 !important;
+}
+
+#productos .cc-catalog-attributes p {
+  font-size: 10.5px !important;
+  line-height: 1.2 !important;
+}
+
+@media (max-width: 1180px) {
+  #productos .cc-catalog-shell {
+    width: min(980px, calc(100% - 56px)) !important;
+    grid-template-columns: 260px minmax(0, 1fr) !important;
+  }
+
+  #productos .cc-catalog-showcase {
+    grid-template-columns: 84px minmax(0, 1fr) 84px !important;
+  }
+
+  #productos .cc-catalog-feature-card {
+    grid-template-columns: minmax(0, 1fr) minmax(230px, 40%) !important;
+  }
+
+  #productos .cc-catalog-feature-card h3,
+  #productos .cc-catalog-card-info h3 {
+    font-size: clamp(32px, 3vw, 48px) !important;
+  }
+}
+
+@media (max-width: 980px) {
+  #productos.cc-catalog-section {
+    padding-top: 118px !important;
+  }
+
+  #productos .cc-catalog-shell {
+    width: min(860px, calc(100% - 42px)) !important;
+    grid-template-columns: 1fr !important;
+  }
+
+  #productos .cc-catalog-sidebar {
+    position: relative !important;
+    top: auto !important;
+    max-height: none !important;
+    overflow: visible !important;
+  }
+
+  #productos .cc-catalog-categories {
+    display: flex !important;
+    gap: 9px !important;
+    overflow-x: auto !important;
+    padding-bottom: 6px !important;
+  }
+
+  #productos .cc-catalog-category {
+    min-width: max-content !important;
+  }
+
+  #productos .cc-catalog-showcase {
+    grid-template-columns: 1fr !important;
+  }
+
+  #productos .cc-catalog-side-card {
+    display: none !important;
+  }
+
+  #productos .cc-catalog-feature-card {
+    grid-template-columns: 1fr !important;
+    min-height: 0 !important;
+  }
+
+  #productos .cc-catalog-card-image {
+    order: -1 !important;
+    min-height: 340px !important;
+  }
+
+  #productos .cc-catalog-attributes {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  }
+}
+
+@media (max-width: 640px) {
+  #productos .cc-catalog-shell {
+    width: calc(100% - 28px) !important;
+  }
+
+  #productos .cc-catalog-header h2 {
+    font-size: clamp(34px, 11vw, 48px) !important;
+  }
+
+  #productos .cc-catalog-card-info {
+    padding: 24px 22px !important;
+  }
+
+  #productos .cc-catalog-feature-card h3,
+  #productos .cc-catalog-card-info h3 {
+    font-size: clamp(30px, 9.5vw, 42px) !important;
+  }
+
+  #productos .cc-catalog-feature-card p,
+  #productos .cc-catalog-card-info p {
+    font-size: 13.5px !important;
+  }
+
+  #productos .cc-catalog-card-image {
+    min-height: 290px !important;
+  }
+
+  #productos .cc-catalog-attributes {
+    grid-template-columns: 1fr !important;
+  }
+}
+
+</style>
+</head>
+
+<body>
+
+  <div class="cc-cursor-dot" aria-hidden="true"></div>
+  <div class="cc-cursor-ring" aria-hidden="true"></div>
+
+  <!-- HEADER -->
+  <header class="site-header">
+
+    <div class="navigation-shell">
+
+      <nav class="main-navigation" aria-label="Navegación principal">
+
+        <div class="navigation-group navigation-left">
+          <a href="#nosotros">Nosotros</a>
+          <a href="#historia">Historia</a>
+          <a href="#productos">Productos</a>
+        </div>
+
+        <div class="navigation-brand-space">
+          <a href="#inicio" class="navigation-brand" aria-label="Ir al inicio">
+            <img src="Imagotipo.png" alt="Cecinas Chillán">
+          </a>
+        </div>
+
+        <div class="navigation-group navigation-right">
+          <a href="#servicios">Distribución</a>
+          <a href="#ubicaciones">Ubicaciones</a>
+          <a href="#contacto">Contacto</a>
+        </div>
+
+      </nav>
+
+    </div>
+
+  </header>
+
+  <main>
+
+    <!-- HERO -->
+<section id="inicio" class="hero">
+
+  <div class="hero-media">
+    <img
+      class="hero-image"
+      src="portada-web-2024.png"
+      alt="Cecinas Chillán · Por tradición... ¡Ud. sabe!"
+    >
+  </div>
+
+  <div class="hero-overlay"></div>
+
+  <div class="hero-container">
+
+    <div class="hero-content">
+
+      <span class="hero-kicker">
+        <span class="hero-kicker-dot"></span>
+        Desde 1987 · Chillán, Región de Ñuble
+      </span>
+
+      <h1>
+        Cecinas
+        <strong>Chillán</strong>
+      </h1>
+
+      <h2>Por tradición... ¡Ud. sabe!</h2>
+
+      <p>
+        Elaboramos cecinas, embutidos y productos cárnicos con tradición
+        chillaneja, materias primas seleccionadas y un sabor que representa
+        a Ñuble en todo Chile.
+      </p>
+
+      <div class="hero-actions">
+        <a href="#productos" class="button button-primary">
+          Ver productos
+        </a>
+
+        <a
+          href="https://wa.me/message/2U6MPSKJ6G45N1"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="button button-outline"
+        >
+          Contactar ventas
+        </a>
+      </div>
+
+    </div>
+
+    <!-- LEMA DERECHO ANIMADO -->
+    <div class="hero-lema">
+      <img
+        src="Lema_blanco_diagcentro.png"
+        alt="Por tradición... ¡Ud. sabe!"
+        class="hero-lema-image"
+      >
+    </div>
+
+  </div>
+
+  <div class="hero-bottom-line"></div>
+
+</section>
+    <!-- NOSOTROS -->
+<section id="nosotros" class="cc-about-editorial-section">
+
+  <div class="cc-about-editorial-bg" aria-hidden="true"></div>
+
+  <div class="cc-about-editorial-shell">
+
+    <div class="cc-about-editorial-top">
+      <span class="cc-section-label">Quiénes somos</span>
+    </div>
+
+    <div class="cc-about-editorial-grid">
+
+      <article class="cc-about-editorial-main">
+
+        <div class="cc-about-editorial-content">
+
+          <span class="cc-about-pill">Desde 1987 · Chillán, Ñuble</span>
+
+          <h2>
+            Marca nacida<br>
+            en Chillán
+          </h2>
+
+          <p>
+            Elaboramos productos con identidad local, inspirados en la tradición
+            gastronómica de Ñuble y en el sabor auténtico de nuestra tierra.
+          </p>
+
+          <div class="cc-about-editorial-actions">
+            <a href="#historia" class="cc-about-btn cc-about-btn-primary">
+              Conocer historia
+            </a>
+
+            <a href="#productos" class="cc-about-btn cc-about-btn-outline">
+              Ver productos
+            </a>
+          </div>
+
+        </div>
+
+        <strong class="cc-about-year-mark" aria-hidden="true">1987</strong>
+
+      </article>
+
+      <article class="cc-about-editorial-orange">
+
+        <span class="cc-about-orange-label">Qué hacemos</span>
+
+        <h3>
+          Cecinas, embutidos<br>
+          y productos cárnicos<br>
+          artesanales
+        </h3>
+
+        <p>
+          Trabajamos con materias primas seleccionadas y procesos cuidados para
+          mantener vivo el sabor tradicional de Chillán en cada preparación.
+        </p>
+
+      </article>
+
+    </div>
+
+    <div class="cc-about-values-row">
+
+      <article class="cc-about-value-card">
+        <span></span>
+        <h4>Misión</h4>
+        <p>
+          Entregar productos cárnicos y embutidos premium, inspirados en recetas
+          tradicionales y elaborados con oficio artesanal.
+        </p>
+      </article>
+
+      <article class="cc-about-value-card">
+        <span></span>
+        <h4>Visión</h4>
+        <p>
+          Ser una marca reconocida por su calidad, tradición y sabor auténtico,
+          proyectando el origen de Chillán dentro y fuera de Chile.
+        </p>
+      </article>
+
+      <article class="cc-about-value-card">
+        <span></span>
+        <h4>Valores</h4>
+        <p>
+          Tradición, calidad, elaboración artesanal, responsabilidad social y
+          compromiso con nuestras raíces.
+        </p>
+      </article>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- HISTORIA -->
+<section id="historia" class="cc-history-v2-section">
+
+  <div class="cc-history-v2-bg" aria-hidden="true"></div>
+
+  <div class="cc-history-v2-shell">
+
+    <!-- COLUMNA IZQUIERDA -->
+    <article class="cc-history-v2-main">
+
+      <span class="cc-history-v2-label">Historia</span>
+
+      <h2 class="cc-history-title-clean">
+      Una tradición
+      <em>que nace</em>
+       en Chillán
+      </h2> 
+
+      <p>
+        Desde 1987, Cecinas Chillán mantiene vivo el oficio, la calidad y el
+        sabor característico de Ñuble.
+      </p>
+
+      <div class="cc-history-v2-years">
+        <strong data-cc-years-since="1987">39</strong>
+
+        <div>
+          <span>Años de</span>
+          <span>tradición</span>
+        </div>
+      </div>
+
+    </article>
+
+    <!-- COLUMNA DERECHA -->
+    <div class="cc-history-v2-timeline">
+
+      <article class="cc-history-v2-item">
+        <div class="cc-history-v2-pill">1987</div>
+
+        <div class="cc-history-v2-item-content">
+          <h3>Inicio del oficio</h3>
+          <p>
+            La marca comienza su camino en Chillán, enfocada en productos con
+            identidad local, tradición y calidad.
+          </p>
+        </div>
+
+        <span class="cc-history-v2-arrow" aria-hidden="true">→</span>
+      </article>
+
+      <article class="cc-history-v2-item">
+        <div class="cc-history-v2-pill">Ñuble</div>
+
+        <div class="cc-history-v2-item-content">
+          <h3>Tradición chillaneja</h3>
+          <p>
+            La elaboración combina materias primas seleccionadas, procesos
+            cuidados y el sabor que distingue a nuestra zona.
+          </p>
+        </div>
+
+        <span class="cc-history-v2-arrow" aria-hidden="true">→</span>
+      </article>
+
+      <article class="cc-history-v2-item">
+        <div class="cc-history-v2-pill">Hoy</div>
+
+        <div class="cc-history-v2-item-content">
+          <h3>Presencia para Chile</h3>
+          <p>
+            Sus productos llegan a hogares, emporios y clientes comerciales que
+            buscan identidad, calidad y respaldo desde Chillán.
+          </p>
+        </div>
+
+        <span class="cc-history-v2-arrow" aria-hidden="true">→</span>
+      </article>
+
+    </div>
+
+  </div>
+
+</section>
+
+   <!-- PRODUCTOS / CATÁLOGO -->
+<section id="productos" class="cc-catalog-section">
+
+  <div class="cc-catalog-bg" aria-hidden="true"></div>
+
+  <div class="cc-catalog-shell">
+
+    <!-- SIDEBAR -->
+    <aside class="cc-catalog-sidebar">
+
+      <div class="cc-catalog-brand">
+  <p>Productos</p>
+  <small>Categorías y formatos disponibles.</small>
+</div>
+
+      <!-- CATEGORÍAS: quedan en el HTML para que no dependan del script -->
+      <div class="cc-catalog-categories" id="ccCatalogCategories">
+
+        <button class="cc-catalog-category is-active" type="button" data-category="longanizas">
+          <strong>Longanizas</strong><em>›</em>
+        </button>
+
+        <button class="cc-catalog-category" type="button" data-category="chorizos">
+          <strong>Chorizos</strong><em>›</em>
+        </button>
+
+        <button class="cc-catalog-category" type="button" data-category="jamones">
+          <strong>Jamones</strong><em>›</em>
+        </button>
+
+        <button class="cc-catalog-category" type="button" data-category="perniles">
+          <strong>Perniles</strong><em>›</em>
+        </button>
+
+        <button class="cc-catalog-category" type="button" data-category="prietas">
+          <strong>Prietas</strong><em>›</em>
+        </button>
+
+        <button class="cc-catalog-category" type="button" data-category="arrollados">
+          <strong>Arrollados y Queso Cabeza</strong><em>›</em>
+        </button>
+
+        <button class="cc-catalog-category" type="button" data-category="salchichas">
+          <strong>Salchichas Artesanales</strong><em>›</em>
+        </button>
+
+        <button class="cc-catalog-category" type="button" data-category="costillares">
+          <strong>Costillares Ahumados</strong><em>›</em>
+        </button>
+
+        <button class="cc-catalog-category" type="button" data-category="panceta">
+          <strong>Pancetas y Salchichón</strong><em>›</em>
+        </button>
+
+        <button class="cc-catalog-category" type="button" data-category="pates">
+          <strong>Patés</strong><em>›</em>
+        </button>
+
+      </div>
+
+    </aside>
+
+    <!-- MAIN -->
+    <div class="cc-catalog-main">
+
+      <div class="cc-catalog-showcase">
+        <article class="cc-catalog-side-card cc-catalog-prev-card" id="ccCatalogPrev" aria-label="Producto anterior"></article>
+        <article class="cc-catalog-feature-card" id="ccCatalogMain" aria-live="polite"></article>
+        <article class="cc-catalog-side-card cc-catalog-next-card" id="ccCatalogNext" aria-label="Producto siguiente"></article>
+      </div>
+
+      <div class="cc-catalog-controls">
+        <button type="button" id="ccCatalogPrevBtn" aria-label="Producto anterior">‹</button>
+        <div class="cc-catalog-dots" id="ccCatalogDots"></div>
+        <button type="button" id="ccCatalogNextBtn" aria-label="Producto siguiente">›</button>
+      </div>
+
+      <div class="cc-catalog-attributes">
+        <article><span>✦</span><div><strong>Ingredientes seleccionados</strong><p>Calidad y sabor tradicional.</p></div></article>
+        <article><span>◷</span><div><strong>Tradición desde 1987</strong><p><b data-cc-years-since="1987">37</b> años de oficio.</p></div></article>
+        <article><span>⌖</span><div><strong>Sabor de Chillán</strong><p>Recetas con identidad local.</p></div></article>
+        <article><span>❄</span><div><strong>Mantener refrigerado</strong><p>Conservar entre 0°C y 4°C.</p></div></article>
+      </div>
+
+    </div>
+
+  </div>
+
+  <!-- DATA PRODUCTOS: imágenes y textos quedan dentro del HTML de la sección, no en el script -->
+  <div class="cc-catalog-product-data" hidden>
+
+    <article data-category="longanizas" data-format="500 gr"><img src="Longaniza Ahumada Tradicional 500g.png" alt="Longaniza Ahumada Tradicional"><h3>Longaniza Ahumada Tradicional</h3><p>El sabor de siempre, con aliño natural y receta tradicional. Ideal para la parrilla o para compartir en familia.</p></article>
+    <article data-category="longanizas" data-format="Granel"><img src="Longaniza Tradicional Granel.png" alt="Longaniza Tradicional Granel"><h3>Longaniza Tradicional Granel</h3><p>Formato granel para preparaciones comerciales y parrillas.</p></article>
+    <article data-category="longanizas" data-format="500 gr"><img src="Longaniza Ahumada Parrillera 500g.png" alt="Longaniza Ahumada Parrillera"><h3>Longaniza Ahumada Parrillera</h3><p>Especial para parrilla, con sabor intenso y excelente jugosidad.</p></article>
+    <article data-category="longanizas" data-format="335 gr"><img src="Longaniza Ahumada Parrillera 335g.png" alt="Longaniza Ahumada Parrillera"><h3>Longaniza Ahumada Parrillera</h3><p>Versión práctica en formato compacto.</p></article>
+    <article data-category="longanizas" data-format="Granel"><img src="Longaniza Ahumada Parrillera Granel.png" alt="Longaniza Ahumada Parrillera"><h3>Longaniza Ahumada Parrillera</h3><p> Formato granel Versión práctica en formato compacto.</p></article>
+    <article data-category="longanizas" data-format="500 gr"><img src="Butifarra Ahumada 500g.png" alt="Butifarra Ahumada"><h3>Butifarra Ahumada</h3><p>Sabor suave, ahumado y tradicional.</p></article>
+    <article data-category="longanizas" data-format="500 gr"><img src="Choripan Artesanal 500g.png" alt="Choripán Artesanal"><h3>Choripán Artesanal</h3><p>Pensado para el clásico choripán chileno.</p></article>
+
+    <article data-category="chorizos" data-format="500 gr"><img src="Chorizo Parrillero 500g.png" alt="Chorizo Parrillero"><h3>Chorizo Parrillero</h3><p>Sabor intenso y jugoso, ideal para preparaciones a la parrilla.</p></article>
+    <article data-category="chorizos" data-format="250 gr"><img src="Chorizo Parrillero 250g.png" alt="Chorizo Parrillero"><h3>Chorizo Parrillero</h3><p>Formato práctico para compartir.</p></article>
+    <article data-category="chorizos" data-format="250 gr"><img src="Chorizo Parrillero Merkén 250g.png" alt="Chorizo Parrillero Merkén"><h3>Chorizo Parrillero Merkén</h3><p>Toque especiado con identidad chilena.</p></article>
+    <article data-category="chorizos" data-format="250 gr"><img src="choricillo cocktail 250g.png" alt="Choricillo Cocktail"><h3>Choricillo Cocktail</h3><p>Pequeño formato para picoteos, tablas y eventos.</p></article>
+
+    <article data-category="jamones" data-format="4,2 Kg"><img src="Jamón Pierna Ahumado.png" alt="Jamón Pierna Ahumado"><h3>Jamón Pierna Ahumado</h3><p>De pierna seleccionada, con notas de humo y sabor tradicional.</p></article>
+    <article data-category="jamones" data-format="4,2 Kg"><img src="Jamón Pierna Acaramelado.png" alt="Jamón Pierna Acaramelado"><h3>Jamón Pierna Acaramelado</h3><p>Sabor delicado y acabado acaramelado.</p></article>
+    <article data-category="jamones" data-format="6,5 Kg"><img src="Jamón Pierna Planchado.png" alt="Jamón Pierna Planchado"><h3>Jamón Pierna Planchado</h3><p>Clásico, de textura suave y sabor equilibrado.</p></article>
+   
+    <article data-category="perniles" data-format="900 gr"><img src="Pernil Cocido.png" alt="Pernil Cocido"><h3>Pernil Cocido</h3><p>Ideal para sándwiches, tablas y preparaciones familiares.</p></article>
+    <article data-category="perniles" data-format="1,2 kg"><img src="Pernil tradicional.png" alt="Pernil Tradicional"><h3>Pernil Tradicional</h3><p>Receta tradicional, jugosa y sabrosa.</p></article>
+
+    <article data-category="prietas" data-format="500 gr"><img src="Prieta de Campo 500gr.png" alt="Prieta de Campo"><h3>Prieta de Campo</h3><p>Receta tradicional con sabor profundo y textura característica.</p></article>
+    <article data-category="prietas" data-format="400 gr"><img src="Prieta de Campo 400g.png" alt="Prieta de Campo"><h3>Prieta de Campo</h3><p>Formato práctico para preparaciones familiares.</p></article>
+    <article data-category="prietas" data-format="200 gr"><img src="Prietas de Campo 200g.png" alt="Prietas de Campo"><h3>Prietas de Campo</h3><p>Versión más compacta para porciones rápidas.</p></article>
+
+    <article data-category="arrollados" data-format="6,5 kg"><img src="Arrollado Huaso.png" alt="Arrollado Huaso"><h3>Arrollado Huaso</h3><p>Clásico embutido enrollado con sabor casero y tradición del sur.</p></article>
+    <article data-category="arrollados" data-format="500 gr"><img src="Arrolladito Huaso 500g.png" alt="Arrolladito Huaso"><h3>Arrolladito Huaso</h3><p>Versión práctica del clásico arrollado huaso.</p></article>
+    <article data-category="arrollados" data-format="2,1 kg"><img src="Arrollado Lomo.png" alt="Arrollado Lomo"><h3>Arrollado Lomo</h3><p>Preparación tradicional, sabrosa y de textura firme.</p></article>
+    <article data-category="arrollados" data-format="4,1 kg"><img src="Queso Cabeza Chancho.png" alt="Queso Cabeza Chancho"><h3>Queso Cabeza Chancho</h3><p>Producto tradicional para tablas y preparaciones frías.</p></article>
+
+    <article data-category="salchichas" data-format="500 gr"><img src="Salchicha Artesanal Gigante.png" alt="Salchicha Artesanal Gigante"><h3>Salchicha Artesanal Gigante</h3><p>Formato grande, ideal para preparaciones familiares.</p></article>
+    <article data-category="salchichas" data-format="250 gr"><img src="Salchicha Artesanal Sin Piel 250g.png" alt="Salchicha Artesanal Sin Piel"><h3>Salchicha Artesanal Sin Piel</h3><p>Suave, práctica y de sabor artesanal.</p></article>
+    <article data-category="salchichas" data-format="1 kg"><img src="Salchichas 1kg.png" alt="Salchichas"><h3>Salchichas</h3><p>Formato familiar para preparaciones rápidas.</p></article>
+    <article data-category="salchichas" data-format="3 kg"><img src="Salchichas Artesanales 3kg.png" alt="Salchichas Artesanales"><h3>Salchichas Artesanales</h3><p>Formato comercial de gran rendimiento.</p></article>
+    <article data-category="salchichas" data-format="250 gr"><img src="Salchichas con Piel 250g.png" alt="Salchichas con Piel"><h3>Salchichas con Piel</h3><p>Textura firme y sabor tradicional.</p></article>
+    <article data-category="salchichas" data-format="500 gr"><img src="Gordas Artesanales 500g.png" alt="Gordas Artesanales"><h3>Gordas Artesanales</h3><p>Producto tradicional de buen calibre y sabor.</p></article>
+
+    <article data-category="costillares" data-format="500 gr"><img src="Costillar Ahumado.png" alt="Costillar Ahumado"><h3>Costillar Ahumado</h3><p>Ahumado lentamente para lograr sabor profundo e intenso.</p></article>
+    <article data-category="costillares" data-format="500 gr"><img src="Costillar Parrillero.png" alt="Costillar Parrillero"><h3>Costillar Parrillero</h3><p>Ideal para parrilla, con sabor ahumado y textura jugosa.</p></article>
+
+    <article data-category="panceta y salchichón" data-format="125 gr"><img src="Panceta 125g.png" alt="Panceta"><h3>Panceta</h3><p>Producto versátil, ideal para cocinar, dorar o acompañar preparaciones.</p></article>
+    <article data-category="panceta y salchichón" data-format="Granel"><img src="Panceta Granel.png" alt="Panceta Granel"><h3>Panceta Granel</h3><p>Formato comercial para cocina y preparación profesional.</p></article>
+<article data-category="panceta y salchichón" data-format="2,5 kg"><img src="Salchichón Cerveza.png" alt="Salchichón cerveza"><h3>Salchichón cerveza</h3><p>Formato comercial para cocina y preparación profesional.</p></article>
+
+    <article data-category="pates" data-format="157 gr"><img src="Paté de Campo.png" alt="Paté de Campo"><h3>Paté de Campo</h3><p>De hígado de cerdo con hierbas frescas y un toque tradicional.</p></article>
+    <article data-category="pates" data-format="141 gr"><img src="Paté de Jamón Teerwust.png" alt="Paté de Jamón Teerwust"><h3>Paté de Jamón Teerwust</h3><p>Textura suave y sabor delicado para compartir.</p></article>
+
+  </div>
+
+</section>
+
+<!-- DISTRIBUCIÓN / COBERTURA COMERCIAL -->
+<section id="servicios" class="cc-coverage-v4-section">
+
+  <div class="cc-coverage-v4-bg" aria-hidden="true"></div>
+
+  <div class="cc-coverage-v4-shell">
+
+    <!-- COLUMNA IZQUIERDA -->
+    <article class="cc-coverage-v4-intro">
+
+      <span class="cc-coverage-v4-label">Distribución</span>
+
+      <h2>Despacho desde Chillán</h2>
+
+      <p>
+        Coordinamos pedidos, formatos comerciales y atención para clientes,
+        distribuidores y puntos de venta en distintas zonas del país.
+      </p>
+
+      <div class="cc-coverage-v4-origin">
+        <span class="cc-coverage-v4-pulse" aria-hidden="true"></span>
+
+      <a class="cc-coverage-v4-cta" href="#contacto">
+        Solicitar atención comercial
+      </a>
+
+    </article>
+
+    <!-- COLUMNA CENTRAL -->
+    <div class="cc-coverage-v4-zones">
+
+      <header class="cc-coverage-v4-zones-head">
+        <h3>Cobertura Nacional</h3>
+        <p>Selecciona una zona para ver detalles</p>
+      </header>
+
+      <div class="cc-coverage-v4-zone-list" role="tablist" aria-label="Zonas de distribución">
+
+        <button
+          class="cc-coverage-v4-zone"
+          type="button"
+          role="tab"
+          aria-selected="false"
+          data-zone="norte"
+        >
+          <span>01</span>
+          <div>
+            <strong>Norte</strong>
+            <small>Arica · Tarapacá · Antofagasta · Atacama</small>
+          </div>
+        </button>
+
+        <button
+          class="cc-coverage-v4-zone"
+          type="button"
+          role="tab"
+          aria-selected="false"
+          data-zone="centro"
+        >
+          <span>02</span>
+          <div>
+            <strong>Centro</strong>
+            <small>Coquimbo · Valparaíso · RM · O’Higgins · Maule</small>
+          </div>
+        </button>
+
+        <button
+          class="cc-coverage-v4-zone is-active"
+          type="button"
+          role="tab"
+          aria-selected="true"
+          data-zone="nuble"
+        >
+          <span>03</span>
+          <div>
+            <strong>Ñuble</strong>
+            <small>Origen productivo y centro logístico</small>
+          </div>
+        </button>
+
+        <button
+          class="cc-coverage-v4-zone"
+          type="button"
+          role="tab"
+          aria-selected="false"
+          data-zone="sur"
+        >
+          <span>04</span>
+          <div>
+            <strong>Sur</strong>
+            <small>Biobío · Araucanía · Los Ríos · Los Lagos</small>
+          </div>
+        </button>
+
+        <button
+          class="cc-coverage-v4-zone"
+          type="button"
+          role="tab"
+          aria-selected="false"
+          data-zone="chiloe"
+        >
+          <span>05</span>
+          <div>
+            <strong>Chiloé</strong>
+            <small>Isla Grande y alrededores</small>
+          </div>
+        </button>
+
+      </div>
+
+    </div>
+
+    <!-- COLUMNA DERECHA -->
+    <aside class="cc-coverage-v4-detail" aria-live="polite">
+
+      <div class="cc-coverage-v4-detail-content">
+
+        <span class="cc-coverage-v4-detail-label">Zona seleccionada</span>
+
+        <h3 id="ccCoverageTitle">Ñuble</h3>
+
+        <p id="ccCoverageText">
+          Desde Chillán coordinamos la atención comercial, formatos disponibles
+          y consolidación de pedidos para el resto del país.
+        </p>
+
+        <div class="cc-coverage-v4-tags" id="ccCoverageTags">
+          <span>Origen Productivo</span>
+          <span>Atención Directa</span>
+          <span>Centro de Operaciones</span>
+        </div>
+
+      </div>
+
+    </aside>
+
+  </div>
+
+</section>
+
+<!-- UBICACIONES -->
+<section id="ubicaciones" class="cc-locations-section">
+
+  <div class="cc-locations-bg" aria-hidden="true"></div>
+
+  <div class="cc-locations-shell">
+
+    <header class="cc-locations-heading">
+      <div class="cc-locations-heading-main">
+        <span class="cc-locations-kicker">Ubicaciones</span>
+        <h2>Fábrica y emporios Cecinas Chillán</h2>
+      </div>
+
+      <p>
+        Nuestra Casa Matriz es el origen productivo en Chillán. Para compra directa,
+        revisa nuestros emporios y próximas aperturas.
+      </p>
+    </header>
+
+    <!-- Selectores sin JS: deben quedar dentro de .cc-locations-shell y antes del board -->
+    <input class="cc-location-radio" type="radio" name="cc-location" id="cc-location-fabrica" checked>
+    <input class="cc-location-radio" type="radio" name="cc-location" id="cc-location-paseo">
+    <input class="cc-location-radio" type="radio" name="cc-location" id="cc-location-providencia">
+    <input class="cc-location-radio" type="radio" name="cc-location" id="cc-location-holanda">
+
+    <div class="cc-locations-board">
+
+      <!-- COLUMNA IZQUIERDA -->
+      <aside class="cc-locations-selector" aria-label="Selector de sucursales">
+
+        <div class="cc-locations-tabs" aria-hidden="true">
+          <span>Todas</span>
+          <span>Fábrica</span>
+          <span>Emporios</span>
+        </div>
+
+        <div class="cc-locations-list">
+
+          <label for="cc-location-fabrica" class="cc-location-item cc-location-item-fabrica cc-location-item-featured">
+            <span class="cc-location-icon">01</span>
+            <span>
+              <strong>Casa Matriz / Fábrica</strong>
+              <small>Chillán, Ñuble</small>
+            </span>
+          </label>
+
+          <label for="cc-location-paseo" class="cc-location-item cc-location-item-paseo">
+            <span class="cc-location-icon">02</span>
+            <span>
+              <strong>Emporio Paseo Ahumada</strong>
+              <small>Santiago Centro</small>
+            </span>
+          </label>
+
+          <label for="cc-location-providencia" class="cc-location-item cc-location-item-providencia">
+            <span class="cc-location-icon">03</span>
+            <span>
+              <strong>Emporio Providencia</strong>
+              <small>Providencia, Santiago</small>
+            </span>
+          </label>
+
+          <label for="cc-location-holanda" class="cc-location-item cc-location-item-holanda">
+            <span class="cc-location-icon cc-location-icon-plus">+</span>
+            <span>
+              <strong>Av. Holanda</strong>
+              <small>Próxima apertura</small>
+            </span>
+          </label>
+
+        </div>
+
+        <a href="#servicios" class="cc-locations-distributor">
+          <span>Distribución</span>
+          <strong>¿Eres distribuidor?</strong>
+          <small>Conoce nuestras zonas de despacho.</small>
+        </a>
+
+      </aside>
+
+      <!-- COLUMNA CENTRAL -->
+      <div class="cc-locations-visual">
+
+        <!-- FÁBRICA / PRINCIPAL -->
+        <article class="cc-location-visual-card cc-location-visual-fabrica">
+
+          <div class="cc-location-map">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3869.782776094932!2d-72.11153271108275!3d-36.612451000882096!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x966928262878a8e5%3A0xdb41e2cc9c20f759!2sCecinas%20Chill%C3%A1n%20Ltda!5e1!3m2!1ses-419!2scl!4v1783540354634!5m2!1ses-419!2scl"
+              loading="lazy"
+              allowfullscreen=""
+              referrerpolicy="strict-origin-when-cross-origin">
+            </iframe>
+          </div>
+
+          <div class="cc-location-photo-card cc-location-photo-card-featured">
+            <div class="cc-location-photo-media">
+              <img src="Fachada Cecinas Chillán.png" alt="Fachada Casa Matriz Cecinas Chillán">
+            </div>
+            <div>
+              <strong>Casa Matriz / Fábrica</strong>
+              <span>Dieciocho de Septiembre 1028, Chillán</span>
+            </div>
+          </div>
+
+        </article>
+
+        <!-- PASEO AHUMADA -->
+        <article class="cc-location-visual-card cc-location-visual-paseo">
+
+          <div class="cc-location-map">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4022.9285041081657!2d-70.65550791185593!3d-33.44096490478983!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662c5002285a72f%3A0x9a2edf01b56234fc!2sEmporio%20Cecinas%20Chill%C3%A1n%20%7C%20Paseo%20Ahumada!5e1!3m2!1ses-419!2scl!4v1783540402999!5m2!1ses-419!2scl"
+              loading="lazy"
+              allowfullscreen=""
+              referrerpolicy="strict-origin-when-cross-origin">
+            </iframe>
+          </div>
+
+          <div class="cc-location-photo-card cc-location-photo-card-vertical">
+            <div class="cc-location-photo-media">
+              <img src="EmporioCecinasChillán_ Ahumada.png" alt="Emporio Cecinas Chillán Paseo Ahumada">
+            </div>
+            <div>
+              <strong>Emporio Paseo Ahumada</strong>
+              <span>Santiago Centro</span>
+            </div>
+          </div>
+
+        </article>
+
+        <!-- PROVIDENCIA -->
+        <article class="cc-location-visual-card cc-location-visual-providencia">
+
+          <div class="cc-location-map">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4023.757932368047!2d-70.61709431185999!3d-33.42307320481537!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662cfed5827664f%3A0x7db3add1c46382ec!2sEmporio%20Cecinas%20Chill%C3%A1n%20%7C%20Providencia!5e1!3m2!1ses-419!2scl!4v1783541258568!5m2!1ses-419!2scl"
+              loading="lazy"
+              allowfullscreen=""
+              referrerpolicy="strict-origin-when-cross-origin">
+            </iframe>
+          </div>
+
+          <div class="cc-location-photo-card">
+            <div class="cc-location-photo-media">
+              <img src="EmporioCecinasChillán_Providencia.png" alt="Emporio Cecinas Chillán Providencia">
+            </div>
+            <div>
+              <strong>Emporio Providencia</strong>
+              <span>Providencia, Santiago</span>
+            </div>
+          </div>
+
+        </article>
+
+        <!-- HOLANDA -->
+        <article class="cc-location-visual-card cc-location-visual-holanda">
+
+          <div class="cc-location-map">
+            <iframe
+              src="https://www.google.com/maps?q=Av.%20Holanda%2C%20Providencia%2C%20Santiago&output=embed"
+              loading="lazy"
+              allowfullscreen=""
+              referrerpolicy="strict-origin-when-cross-origin">
+            </iframe>
+          </div>
+
+          <div class="cc-location-photo-card cc-location-photo-card-soon">
+            <div class="cc-location-photo-placeholder">
+              <span>Próxima apertura</span>
+              <strong>Av. Holanda</strong>
+            </div>
+            <div>
+              <strong>Av. Holanda</strong>
+              <span>Apertura en agosto</span>
+            </div>
+          </div>
+
+        </article>
+
+      </div>
+
+      <!-- COLUMNA DERECHA -->
+      <aside class="cc-locations-detail">
+
+        <div class="cc-locations-detail-head">
+          <span>Nuestras ubicaciones</span>
+          <small>4 puntos</small>
+        </div>
+
+        <!-- FÁBRICA / PRINCIPAL -->
+        <article class="cc-location-detail-card cc-detail-fabrica cc-detail-featured">
+
+          <div class="cc-location-detail-title">
+            <span>Casa matriz / Fábrica</span>
+            <h3>Cecinas Chillán Ltda.</h3>
+            <p>Dieciocho de Septiembre 1028, Chillán</p>
+          </div>
+
+          <p class="cc-location-detail-copy">
+            Centro productivo y atención comercial de la marca.
+          </p>
+
+          <div class="cc-location-schedule">
+            <strong>Horarios de atención</strong>
+            <p><span>Lunes y martes</span>09:00 a 18:00 hrs</p>
+            <p><span>Miércoles</span>09:00 a 19:00 hrs</p>
+            <p><span>Jueves</span>09:00 a 18:30 hrs</p>
+            <p><span>Viernes</span>09:00 a 16:00 hrs</p>
+          </div>
+
+          <div class="cc-location-actions">
+            <a href="https://maps.app.goo.gl/J7nKbKfB1C9hyjXS6" target="_blank" rel="noopener noreferrer">
+              Cómo llegar
+            </a>
+
+            <a href="https://www.instagram.com/cecinaschillanltda/" target="_blank" rel="noopener noreferrer">
+              Instagram
+            </a>
+          </div>
+
+        </article>
+
+        <!-- PASEO AHUMADA -->
+        <article class="cc-location-detail-card cc-detail-paseo">
+
+          <div class="cc-location-detail-title">
+            <span>Emporio</span>
+            <h3>Emporio Paseo Ahumada</h3>
+            <p>Santiago Centro</p>
+          </div>
+
+          <p class="cc-location-detail-copy">
+            Punto de venta en Santiago para compras rápidas y sabor tradicional.
+          </p>
+
+          <div class="cc-location-schedule">
+            <strong>Horarios de atención</strong>
+            <p><span>Lunes a viernes</span>08:30 a 20:00 hrs</p>
+            <p><span>Sábados</span>09:30 a 16:30 hrs</p>
+          </div>
+
+          <div class="cc-location-actions">
+            <a href="https://maps.app.goo.gl/ur9zqWeMQBigqFf46" target="_blank" rel="noopener noreferrer">
+              Ver ubicación
+            </a>
+
+            <a href="https://www.instagram.com/emporiocecinaschillan/" target="_blank" rel="noopener noreferrer">
+              Instagram
+            </a>
+          </div>
+
+        </article>
+
+        <!-- PROVIDENCIA -->
+        <article class="cc-location-detail-card cc-detail-providencia">
+
+          <div class="cc-location-detail-title">
+            <span>Emporio</span>
+            <h3>Emporio Providencia</h3>
+            <p>Providencia, Santiago</p>
+          </div>
+
+          <p class="cc-location-detail-copy">
+            Punto de venta con productos seleccionados Cecinas Chillán.
+          </p>
+
+          <div class="cc-location-schedule">
+            <strong>Horarios de atención</strong>
+            <p><span>Lunes a viernes</span>08:30 a 20:00 hrs</p>
+            <p><span>Sábados</span>09:30 a 16:30 hrs</p>
+          </div>
+
+          <div class="cc-location-actions">
+            <a href="https://maps.app.goo.gl/EmhQE8oocHFsdm2p9" target="_blank" rel="noopener noreferrer">
+              Ver ubicación
+            </a>
+
+            <a href="https://www.instagram.com/emporiocecinaschillan/" target="_blank" rel="noopener noreferrer">
+              Instagram
+            </a>
+          </div>
+
+        </article>
+
+        <!-- HOLANDA -->
+        <article class="cc-location-detail-card cc-detail-holanda">
+
+          <div class="cc-location-detail-title">
+            <span>Próxima apertura</span>
+            <h3>Av. Holanda</h3>
+            <p>Providencia, Santiago</p>
+          </div>
+
+          <p class="cc-location-detail-copy">
+            Nueva sucursal Cecinas Chillán en Providencia.
+          </p>
+
+          <div class="cc-location-schedule">
+            <strong>Horario</strong>
+            <p><span>Apertura</span>Agosto</p>
+          </div>
+
+          <div class="cc-location-actions">
+            <a href="https://www.instagram.com/emporiocecinaschillan/" target="_blank" rel="noopener noreferrer">
+              Novedades
+            </a>
+
+            <a href="https://www.instagram.com/emporiocecinaschillan/" target="_blank" rel="noopener noreferrer">
+              Instagram
+            </a>
+          </div>
+
+        </article>
+
+      </aside>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- CONTACTO -->
+<section id="contacto" class="cc-form-section">
+
+  <div class="cc-form-bg" aria-hidden="true"></div>
+
+  <div class="cc-form-shell">
+
+    <div class="cc-form-heading">
+      <span>Contacto</span>
+
+      <h2>
+        Escríbenos y derivamos tu consulta
+      </h2>
+
+      <p>
+        Selecciona el motivo de contacto y completa todos los campos solicitados.
+        Así podremos derivar correctamente tu solicitud al área correspondiente.
+      </p>
+    </div>
+
+    <div class="cc-form-layout">
+
+      <form id="cc-contact-form" class="cc-contact-form" enctype="multipart/form-data">
+
+        <div class="cc-form-row">
+
+          <label>
+            Motivo de contacto
+            <select id="contact-area" name="area" required>
+              <option value="">Selecciona una opción</option>
+              <option value="pedidos">Cotizaciones Y Pedidos</option>
+              <option value="rrhh">Recursos Humanos</option>
+              <option value="marketing">Marketing y Comunicaciones</option>
+              <option value="calidad">Control de Calidad Y Reclamos</option>
+              <option value="adquisiciones">Adquisiciones Y Proveedores</option>
+            </select>
+          </label>
+
+          <label>
+            Nombre de contacto
+            <input type="text" id="contact-name" required>
+          </label>
+
+        </div>
+
+        <div class="cc-form-row">
+
+          <label>
+            Correo electrónico
+            <input type="email" id="contact-email" required>
+          </label>
+
+          <label>
+            Teléfono
+            <input type="tel" id="contact-phone" required>
+          </label>
+
+        </div>
+
+        <div class="cc-form-row">
+
+          <label>
+            Comuna
+            <input type="text" id="contact-commune" required>
+          </label>
+
+          <label>
+            Región
+            <input type="text" id="contact-region" required>
+          </label>
+
+        </div>
+
+        <!-- COTIZACIONES / PEDIDOS -->
+        <div id="fields-pedidos" class="cc-area-fields" hidden>
+
+          <div class="cc-commercial-head">
+            <span>Datos comerciales</span>
+            <p>
+              Esta información es obligatoria para cotizaciones, pedidos y solicitudes comerciales.
+            </p>
+          </div>
+
+          <div class="cc-form-row">
+
+            <label>
+              Razón social
+              <input type="text" id="pedido-razon-social" data-area-required>
+            </label>
+
+            <label>
+              RUT empresa
+              <input type="text" id="pedido-rut" data-area-required>
+            </label>
+
+          </div>
+
+          <div class="cc-form-row">
+
+            <label>
+              Giro
+              <input type="text" id="pedido-giro" data-area-required>
+            </label>
+
+            <label>
+              Región
+              <input type="text" id="pedido-region" data-area-required>
+            </label>
+
+          </div>
+
+          <div class="cc-form-row">
+
+            <label>
+              Comuna comercial
+              <input type="text" id="pedido-comuna" data-area-required>
+            </label>
+
+            <label>
+              Correo para coordinación
+              <input type="email" id="pedido-correo" data-area-required>
+            </label>
+
+          </div>
+
+          <div class="cc-form-block">
+
+            <span class="cc-form-mini-title">Productos de interés</span>
+
+            <div class="cc-product-options" id="pedido-productos">
+              <label><input type="checkbox" value="Longanizas"> Longanizas</label>
+              <label><input type="checkbox" value="Chorizos"> Chorizos</label>
+              <label><input type="checkbox" value="Jamones"> Jamones</label>
+              <label><input type="checkbox" value="Prietas"> Prietas</label>
+              <label><input type="checkbox" value="Arrollados"> Arrollados</label>
+              <label><input type="checkbox" value="Salchichón"> Salchichón</label>
+              <label><input type="checkbox" value="Salchichas artesanales"> Salchichas artesanales</label>
+              <label><input type="checkbox" value="Costillares"> Costillares</label>
+              <label><input type="checkbox" value="Panceta"> Panceta</label>
+              <label><input type="checkbox" value="Perniles"> Perniles</label>
+              <label><input type="checkbox" value="Patés"> Patés</label>
+              <label><input type="checkbox" value="Otro"> Otro</label>
+            </div>
+
+          </div>
+
+        </div>
+
+        <!-- RECURSOS HUMANOS -->
+        <div id="fields-rrhh" class="cc-area-fields" hidden>
+
+          <div class="cc-commercial-head">
+            <span>Recursos Humanos</span>
+            <p>
+              Indica el cargo al que deseas postular o la consulta laboral que necesitas realizar.
+            </p>
+          </div>
+
+          <div class="cc-form-row">
+
+            <label>
+              Cargo de interés
+              <input type="text" id="rrhh-cargo" data-area-required>
+            </label>
+
+            <label>
+              Disponibilidad
+              <input type="text" id="rrhh-disponibilidad" placeholder="Ej: inmediata, turnos, jornada completa" data-area-required>
+            </label>
+
+          </div>
+
+          <div class="cc-form-row">
+
+            <label>
+              Experiencia relacionada
+              <input type="text" id="rrhh-experiencia" data-area-required>
+            </label>
+
+            <label>
+              Adjuntar CV
+              <input type="file" id="rrhh-cv" accept=".pdf,.doc,.docx" data-area-required>
+            </label>
+
+          </div>
+
+        </div>
+
+        <!-- MARKETING Y COMUNICACIONES -->
+        <div id="fields-marketing" class="cc-area-fields" hidden>
+
+          <div class="cc-commercial-head">
+            <span>Marketing y Comunicaciones</span>
+            <p>
+              Para prensa, merchandising, colaboraciones, alianzas, entrevistas, eventos,
+              material gráfico, auspicios y solicitudes de marca.
+            </p>
+          </div>
+
+          <div class="cc-form-row">
+
+            <label>
+              Tipo de solicitud
+              <select id="marketing-tipo" data-area-required>
+                <option value="">Selecciona una opción</option>
+                <option value="Prensa">Prensa</option>
+                <option value="Colaboración">Colaboración</option>
+                <option value="Alianza">Alianza</option>
+                <option value="Entrevista">Entrevista</option>
+                <option value="Evento">Evento</option>
+                <option value="Merchandising">Merchandising</option>
+                <option value="Material gráfico">Material gráfico</option>
+                <option value="Auspicio">Auspicio</option>
+                <option value="Solicitud de marca">Solicitud de marca</option>
+                <option value="Otro">Otro</option>
+              </select>
+            </label>
+
+            <label>
+              Organización / medio / marca
+              <input type="text" id="marketing-organizacion" data-area-required>
+            </label>
+
+          </div>
+
+          <div class="cc-form-row">
+
+            <label>
+              Fecha estimada
+              <input type="text" id="marketing-fecha" placeholder="Ej: agosto 2026, por definir" data-area-required>
+            </label>
+
+            <label>
+              Canal o plataforma
+              <input type="text" id="marketing-canal" placeholder="Ej: Instagram, prensa, evento, web" data-area-required>
+            </label>
+
+          </div>
+
+          <div class="cc-form-row">
+
+            <label>
+              Objetivo de la solicitud
+              <input type="text" id="marketing-objetivo" data-area-required>
+            </label>
+
+            <label>
+              Link de referencia
+              <input type="url" id="marketing-link" placeholder="https://..." data-area-required>
+            </label>
+
+          </div>
+
+        </div>
+
+        <!-- CONTROL DE CALIDAD y RECLAMOS -->
+        <div id="fields-calidad" class="cc-area-fields" hidden>
+
+          <div class="cc-commercial-head">
+            <span>Control de Calidad y Reclamos</span>
+            <p>
+              Para reclamos, observaciones de producto, trazabilidad, boleta,
+              lugar de compra y fotografías del producto, etiqueta, empaque y boleta.
+            </p>
+          </div>
+
+          <div class="cc-form-row">
+
+            <label>
+              Lugar de compra
+              <input type="text" id="calidad-lugar" data-area-required>
+            </label>
+
+            <label>
+              Fecha de compra
+              <input type="text" id="calidad-fecha" placeholder="Ej: 12/07/2026" data-area-required>
+            </label>
+
+          </div>
+
+          <div class="cc-form-row">
+
+            <label>
+              Número de boleta
+              <input type="text" id="calidad-boleta" data-area-required>
+            </label>
+
+            <label>
+              Producto observado
+              <input type="text" id="calidad-producto" data-area-required>
+            </label>
+
+          </div>
+
+          <div class="cc-form-row">
+
+            <label>
+              Lote / vencimiento / etiqueta
+              <input type="text" id="calidad-lote" data-area-required>
+            </label>
+
+            <label>
+              Detalle breve del problema
+              <input type="text" id="calidad-detalle" data-area-required>
+            </label>
+
+          </div>
+
+          <div class="cc-form-file-grid">
+
+            <label>
+              Foto boleta
+              <input type="file" id="calidad-foto-boleta" accept="image/*,.pdf" data-area-required>
+            </label>
+
+            <label>
+              Foto etiqueta
+              <input type="file" id="calidad-foto-etiqueta" accept="image/*,.pdf" data-area-required>
+            </label>
+
+            <label>
+              Foto empaque
+              <input type="file" id="calidad-foto-empaque" accept="image/*,.pdf" data-area-required>
+            </label>
+
+            <label>
+              Foto producto
+              <input type="file" id="calidad-foto-producto" accept="image/*,.pdf" data-area-required>
+            </label>
+
+          </div>
+
+        </div>
+
+        <!-- ADQUISICIONES y PROVEEDORES -->
+        <div id="fields-adquisiciones" class="cc-area-fields" hidden>
+
+          <div class="cc-commercial-head">
+            <span>Adquisiciones y Proveedores</span>
+            <p>
+              Para proveedores que quieran presentar productos, insumos, servicios
+              u ofertas para la fábrica.
+            </p>
+          </div>
+
+          <div class="cc-form-row">
+
+            <label>
+              Empresa proveedora
+              <input type="text" id="adq-empresa" data-area-required>
+            </label>
+
+            <label>
+              RUT empresa
+              <input type="text" id="adq-rut" data-area-required>
+            </label>
+
+          </div>
+
+          <div class="cc-form-row">
+
+            <label>
+              Producto o servicio ofrecido
+              <input type="text" id="adq-servicio" data-area-required>
+            </label>
+
+            <label>
+              Categoría
+              <input type="text" id="adq-categoria" placeholder="Ej: insumos, mantención, transporte, packaging" data-area-required>
+            </label>
+
+          </div>
+
+          <div class="cc-form-row">
+
+            <label>
+              Zona de cobertura
+              <input type="text" id="adq-cobertura" data-area-required>
+            </label>
+
+            <label>
+              Sitio web o catálogo
+              <input type="url" id="adq-link" placeholder="https://..." data-area-required>
+            </label>
+
+          </div>
+
+        </div>
+
+        <label>
+          Mensaje
+          <textarea id="contact-message" rows="5" required></textarea>
+        </label>
+
+        <div class="cc-form-submit">
+
+          <button type="submit" class="cc-form-btn">
+            Enviar solicitud
+          </button>
+
+          <p id="cc-form-helper">
+            Al enviar, tu solicitud será derivada al área correspondiente.
+          </p>
+
+        </div>
+
+      </form>
+
+      <aside class="cc-form-side">
+
+        <span>Área seleccionada</span>
+
+        <h3 id="cc-area-title">
+          Selecciona un motivo
+        </h3>
+
+        <p id="cc-area-text">
+          Aquí aparecerá una descripción del tipo de solicitud que puedes realizar.
+        </p>
+
+        <div class="cc-side-note" id="cc-area-note">
+          Completa todos los campos solicitados para enviar correctamente tu consulta.
+        </div>
+
+      </aside>
+
+    </div>
+
+  </div>
+
+</section>
+
+</main>
+
+<!-- FOOTER -->
+<footer class="cc-footer">
+
+  <div class="cc-footer-shell">
+
+    <!-- MARCA -->
+    <div class="cc-footer-brand">
+
+      <img
+        src="Marca Gráfica.png"
+        alt="Cecinas Chillán"
+        class="cc-footer-logo"
+      >
+
+      <div class="cc-footer-brand-copy">
+
+        <img
+           src="Lema_diagramIzquierda.png"
+          alt="Por tradición... ¡Ud. sabe!"
+          class="cc-footer-slogan"
+        >
+
+        <p>
+          Elaborando cecinas tradicionales desde 1987.
+          Calidad, sabor y tradición de Chillán para todo Chile.
+        </p>
+
+      </div>
+
+    </div>
+
+   <!-- CONTACTO -->
+<div class="cc-footer-column cc-footer-contact">
+
+  <h3>Contacto</h3>
+
+  <ul class="cc-footer-list">
+
+    <li>
+      <span class="cc-footer-icon" aria-hidden="true">
+        <svg viewBox="0 0 24 24">
+          <path d="M4 6h16v12H4V6Z"></path>
+          <path d="m4 7 8 6 8-6"></path>
+        </svg>
+      </span>
+
+      <a href="mailto:pedidos@cecinaschillan.cl">
+        pedidos@cecinaschillan.cl
+      </a>
+    </li>
+
+    <li>
+      <span class="cc-footer-icon" aria-hidden="true">
+        <svg viewBox="0 0 24 24">
+          <path d="M8.5 5.5 6.7 3.7a1.8 1.8 0 0 0-2.6 0L3 4.8c-.7.7-.8 1.8-.3 2.7 3.1 5.9 7.9 10.7 13.8 13.8.9.5 2 .4 2.7-.3l1.1-1.1a1.8 1.8 0 0 0 0-2.6l-1.8-1.8a1.8 1.8 0 0 0-2.2-.3l-1.5.8a13.7 13.7 0 0 1-6.8-6.8l.8-1.5a1.8 1.8 0 0 0-.3-2.2Z"></path>
+        </svg>
+      </span>
+
+      <a href="tel:+56992409871">
+        +56 9 9240 9871
+      </a>
+    </li>
+
+    <li>
+      <span class="cc-footer-icon" aria-hidden="true">
+        <svg viewBox="0 0 24 24">
+          <path d="M12 21s7-6.1 7-12A7 7 0 0 0 5 9c0 5.9 7 12 7 12Z"></path>
+          <circle cx="12" cy="9" r="2.4"></circle>
+        </svg>
+      </span>
+
+      <a
+        href="https://maps.app.goo.gl/J7nKbKfB1C9hyjXS6"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Dieciocho de Septiembre, 1028, Chillán
+      </a>
+    </li>
+
+  </ul>
+
+</div>
+
+<!-- SÍGUENOS / DIRECTORIO -->
+<div class="cc-footer-column cc-footer-social-column">
+
+  <h3>Síguenos</h3>
+
+  <ul class="cc-footer-list cc-footer-socials cc-footer-socials-icons">
+
+    <li>
+      <a
+        href="https://wa.me/message/2U6MPSKJ6G45N1"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="cc-social-link"
+        aria-label="WhatsApp Cecinas Chillán"
+      >
+        <span class="cc-footer-social-icon">
+          <img src="Whatsapp Icon.png" alt="" class="cc-social-img">
+        </span>
+      </a>
+    </li>
+
+    <li>
+      <a
+        href="https://www.instagram.com/cecinaschillanltda/"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="cc-social-link"
+        aria-label="Instagram Cecinas Chillán"
+      >
+        <span class="cc-footer-social-icon">
+          <img src="Instagram Icon.png" alt="" class="cc-social-img">
+        </span>
+      </a>
+    </li>
+
+    <li>
+      <a
+        href="https://cl.linkedin.com/company/cecinaschillanltda"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="cc-social-link"
+        aria-label="LinkedIn Cecinas Chillán"
+      >
+        <span class="cc-footer-social-icon">
+          <img src="LinkedIn Icon.png" alt="" class="cc-social-img">
+        </span>
+      </a>
+    </li>
+
+  </ul>
+
+  <div class="cc-footer-directory">
+    <span>Atención y áreas internas</span>
+
+    <a href="directorio.html">
+      Directorio de contactos
+    </a>
+  </div>
+
+</div>
+
+</footer>
+
+  <!-- SCRIPT PRODUCTOS / CATÁLOGO
+     Lee los productos desde el HTML de la sección:
+     #productos .cc-catalog-product-data article[data-category]
+     No cambia nombres, no borra productos y no guarda imágenes dentro del script.
+     Corrige la lectura de categorías como Pancetas y Salchichón aunque el data-category tenga variaciones.
+-->
+<script>
+(function () {
+  const whatsappUrl = "https://wa.me/message/2U6MPSKJ6G45N1";
+
+  const section = document.querySelector("#productos.cc-catalog-section");
+  const categoryContainer = section?.querySelector("#ccCatalogCategories");
+  const productDataContainer = section?.querySelector(".cc-catalog-product-data");
+  const prevCardEl = section?.querySelector("#ccCatalogPrev");
+  const mainCardEl = section?.querySelector("#ccCatalogMain");
+  const nextCardEl = section?.querySelector("#ccCatalogNext");
+  const dotsContainer = section?.querySelector("#ccCatalogDots");
+  const prevBtn = section?.querySelector("#ccCatalogPrevBtn");
+  const nextBtn = section?.querySelector("#ccCatalogNextBtn");
+
+  if (!section || !categoryContainer || !productDataContainer || !prevCardEl || !mainCardEl || !nextCardEl || !dotsContainer || !prevBtn || !nextBtn) {
+    console.warn("Catálogo Cecinas Chillán: faltan elementos HTML.");
+    return;
+  }
+
+  function normalize(value) {
+    return String(value || "")
+      .toLowerCase()
+      .normalize("NFD")
+      .replace(/[\u0300-\u036f]/g, "")
+      .replace(/ñ/g, "n")
+      .replace(/&/g, "y")
+      .replace(/[^a-z0-9]+/g, "")
+      .trim();
+  }
+
+  const categoryButtons = Array.from(categoryContainer.querySelectorAll(".cc-catalog-category[data-category]"));
+
+  const categoryNames = Object.fromEntries(
+    categoryButtons.map((button) => {
+      const label = button.querySelector("strong")?.textContent.trim() || button.textContent.replace("›", "").trim();
+      return [button.dataset.category, label];
+    })
+  );
+
+  const products = Array.from(productDataContainer.querySelectorAll("article[data-category]")).map((item) => {
+    const image = item.querySelector("img");
+    const title = item.querySelector("h3")?.textContent.trim() || "Producto";
+    const rawKey = item.dataset.category || "";
+
+    return {
+      rawKey,
+      keyNorm: normalize(rawKey),
+      name: title,
+      description: item.querySelector("p")?.textContent.trim() || "",
+      format: item.dataset.format || "Formato disponible",
+      imageSrc: image?.getAttribute("src") || "",
+      imageAlt: image?.getAttribute("alt") || title
+    };
+  });
+
+  let activeCategory = categoryButtons.find((button) => button.classList.contains("is-active"))?.dataset.category || categoryButtons[0]?.dataset.category || "";
+  let activeIndex = 0;
+
+  function modulo(index, length) {
+    return ((index % length) + length) % length;
+  }
+
+  function getCategoryLabel(categoryKey) {
+    return categoryNames[categoryKey] || categoryKey;
+  }
+
+  function productMatchesCategory(product, categoryKey) {
+    const activeNorm = normalize(categoryKey);
+    const productNorm = product.keyNorm;
+
+    if (!activeNorm || !productNorm) return false;
+    if (productNorm === activeNorm) return true;
+
+    /* Permite que "panceta" encuentre productos cargados como
+       "panceta y salchichón", sin cambiar el nombre visible. */
+    if (productNorm.includes(activeNorm) || activeNorm.includes(productNorm)) return true;
+
+    return false;
+  }
+
+  function getItems() {
+    return products.filter((product) => productMatchesCategory(product, activeCategory));
+  }
+
+  function createWhatsappLink(product) {
+    const message = `Hola, quiero consultar por ${product.name} (${product.format}) de Cecinas Chillán.`;
+    return `${whatsappUrl}?text=${encodeURIComponent(message)}`;
+  }
+
+  function setActiveCategory(categoryKey) {
+    activeCategory = categoryKey;
+    activeIndex = 0;
+
+    categoryButtons.forEach((button) => {
+      button.classList.toggle("is-active", button.dataset.category === activeCategory);
+    });
+
+    renderProducts();
+  }
+
+  function imageMarkup(product, loadingValue) {
+    return `<img src="${product.imageSrc}" alt="${product.imageAlt}" loading="${loadingValue}">`;
+  }
+
+  function createSideCard(product) {
+    return `
+      <div class="cc-catalog-side-thumb">
+        ${imageMarkup(product, "lazy")}
+      </div>
+
+      <div class="cc-catalog-side-body">
+        <span>${getCategoryLabel(activeCategory)}</span>
+        <strong>${product.name}</strong>
+        <p>${product.description}</p>
+      </div>
+    `;
+  }
+
+  function createMainCard(product) {
+    return `
+      <div class="cc-catalog-card-info">
+        <div class="cc-catalog-card-kicker">
+          <span>${getCategoryLabel(activeCategory)}</span>
+          <strong class="cc-catalog-featured">★ Destacado</strong>
+        </div>
+
+        <h3>${product.name}</h3>
+        <p>${product.description}</p>
+
+        <div class="cc-catalog-format">
+          <strong>${product.format}</strong>
+          <span>Formato disponible</span>
+        </div>
+
+        <div class="cc-catalog-actions">
+          <a class="cc-catalog-consult" href="${createWhatsappLink(product)}" target="_blank" rel="noopener noreferrer">
+            Consultar
+          </a>
+        </div>
+      </div>
+
+      <div class="cc-catalog-card-image">
+        ${imageMarkup(product, "eager")}
+      </div>
+    `;
+  }
+
+  function renderDots(items) {
+    dotsContainer.innerHTML = items.map((_, index) =>
+      `<button class="cc-catalog-dot ${index === activeIndex ? "is-active" : ""}" type="button" aria-label="Ver producto ${index + 1}"></button>`
+    ).join("");
+
+    Array.from(dotsContainer.querySelectorAll(".cc-catalog-dot")).forEach((dot, index) => {
+      dot.addEventListener("click", () => {
+        activeIndex = index;
+        renderProducts();
+      });
+    });
+  }
+
+  function renderProducts() {
+    const items = getItems();
+    const total = items.length;
+
+    if (!total) {
+      prevCardEl.innerHTML = "";
+      nextCardEl.innerHTML = "";
+      dotsContainer.innerHTML = "";
+      mainCardEl.innerHTML = `
+        <div class="cc-catalog-card-info">
+          <div class="cc-catalog-card-kicker"><span>${getCategoryLabel(activeCategory)}</span></div>
+          <h3>Sin productos visibles</h3>
+          <p>Revisa que los productos de esta categoría tengan el mismo data-category en el HTML.</p>
+        </div>
+      `;
+      return;
+    }
+
+    const currentProduct = items[modulo(activeIndex, total)];
+    const previousProduct = items[modulo(activeIndex - 1, total)];
+    const nextProduct = items[modulo(activeIndex + 1, total)];
+
+    prevCardEl.innerHTML = createSideCard(previousProduct);
+    mainCardEl.innerHTML = createMainCard(currentProduct);
+    nextCardEl.innerHTML = createSideCard(nextProduct);
+
+    renderDots(items);
+  }
+
+  categoryButtons.forEach((button) => {
+    button.addEventListener("click", () => setActiveCategory(button.dataset.category));
+  });
+
+  prevCardEl.addEventListener("click", () => {
+    const total = getItems().length;
+    if (!total) return;
+    activeIndex = modulo(activeIndex - 1, total);
+    renderProducts();
+  });
+
+  nextCardEl.addEventListener("click", () => {
+    const total = getItems().length;
+    if (!total) return;
+    activeIndex = modulo(activeIndex + 1, total);
+    renderProducts();
+  });
+
+  prevBtn.addEventListener("click", () => {
+    const total = getItems().length;
+    if (!total) return;
+    activeIndex = modulo(activeIndex - 1, total);
+    renderProducts();
+  });
+
+  nextBtn.addEventListener("click", () => {
+    const total = getItems().length;
+    if (!total) return;
+    activeIndex = modulo(activeIndex + 1, total);
+    renderProducts();
+  });
+
+  setActiveCategory(activeCategory);
+})();
+</script>
+
+
+
+<!-- SCRIPT DISTRIBUCIÓN / COBERTURA
+     Cambia el detalle de la zona seleccionada sin modificar el header.
+-->
+<!-- SCRIPT DISTRIBUCIÓN / COBERTURA
+     Función:
+     - Activa los botones de zonas: Norte, Centro, Ñuble, Sur y Chiloé.
+     - Cambia el título, texto y etiquetas del box derecho.
+     - No usa mapa interactivo.
+     - No modifica el header.
+-->
+<script>
+  (function () {
+    const section = document.querySelector("#servicios.cc-coverage-v4-section");
+    if (!section) return;
+
+    const zoneButtons = section.querySelectorAll(".cc-coverage-v4-zone");
+    const title = section.querySelector("#ccCoverageTitle");
+    const text = section.querySelector("#ccCoverageText");
+    const tags = section.querySelector("#ccCoverageTags");
+    const detailContent = section.querySelector(".cc-coverage-v4-detail-content");
+
+    const zones = {
+      norte: {
+        title: "Norte",
+        text: "Coordinamos atención comercial para clientes y puntos de venta en la zona norte del país, según disponibilidad y requerimiento.",
+        tags: [
+          "Cobertura Norte",
+          "Formatos Comerciales",
+          "Coordinación por Zona"
+        ]
+      },
+
+      centro: {
+        title: "Centro",
+        text: "Gestionamos pedidos y formatos comerciales para la zona centro, conectando disponibilidad, logística y atención directa.",
+        tags: [
+          "Alta Demanda",
+          "Atención Comercial",
+          "Pedidos Programados"
+        ]
+      },
+
+      nuble: {
+        title: "Ñuble",
+        text: "Desde Chillán coordinamos la atención comercial, formatos disponibles y consolidación de pedidos para el resto del país.",
+        tags: [
+          "Origen Productivo",
+          "Atención Directa",
+          "Centro de Operaciones"
+        ]
+      },
+
+      sur: {
+        title: "Sur",
+        text: "Conectamos la tradición de Chillán con clientes del sur de Chile mediante coordinación comercial y formatos según disponibilidad.",
+        tags: [
+          "Ruta Sur",
+          "Coordinación Comercial",
+          "Formato por Requerimiento"
+        ]
+      },
+
+      chiloe: {
+        title: "Chiloé",
+        text: "Atención comercial para Isla Grande y alrededores mediante coordinación previa, disponibilidad de formatos y planificación logística.",
+        tags: [
+          "Coordinación Especial",
+          "Ruta Chiloé",
+          "Despacho Programado"
+        ]
+      }
+    };
+
+    function updateZone(zoneKey) {
+      const zone = zones[zoneKey] || zones.nuble;
+
+      zoneButtons.forEach((button) => {
+        const isActive = button.dataset.zone === zoneKey;
+
+        button.classList.toggle("is-active", isActive);
+        button.setAttribute("aria-selected", isActive ? "true" : "false");
+      });
+
+      if (title) {
+        title.textContent = zone.title;
+      }
+
+      if (text) {
+        text.textContent = zone.text;
+      }
+
+      if (tags) {
+        tags.innerHTML = zone.tags
+          .map((tag) => `<span>${tag}</span>`)
+          .join("");
+      }
+
+      if (detailContent) {
+        detailContent.style.animation = "none";
+        void detailContent.offsetWidth;
+        detailContent.style.animation = "ccCoverageDetailIn 0.38s ease both";
+      }
+    }
+
+    zoneButtons.forEach((button) => {
+      button.addEventListener("click", () => {
+        updateZone(button.dataset.zone);
+      });
+    });
+
+    updateZone("nuble");
+  })();
+</script>
+
+<!-- SCRIPT CONTACTO / FORMULARIO
+     Muestra campos por área, valida datos y arma el mailto correspondiente.
+-->
+<script>
+  const contactForm = document.querySelector("#cc-contact-form");
+  const contactArea = document.querySelector("#contact-area");
+
+  const areaTitle = document.querySelector("#cc-area-title");
+  const areaText = document.querySelector("#cc-area-text");
+  const areaNote = document.querySelector("#cc-area-note");
+
+  const areaFieldBlocks = document.querySelectorAll(".cc-area-fields");
+
+  const contactConfig = {
+    pedidos: {
+      title: "Cotizaciones / Pedidos",
+      text: "Solicitud comercial para empresas que desean cotizar, realizar pedidos o consultar por productos Cecinas Chillán.",
+      note: "Completa razón social, RUT empresa, giro, región, comuna y productos de interés. Todos los campos son obligatorios.",
+      to: "pedidos@cecinaschillan.cl",
+      cc: "ventas@cecinaschillan.cl",
+      subject: "Cotización / Pedido - Cecinas Chillán",
+      fieldsId: "fields-pedidos"
+    },
+    rrhh: {
+      title: "Recursos Humanos",
+      text: "Postulaciones, envío de currículum vitae o consultas laborales.",
+      note: "Indica el cargo de interés, disponibilidad, experiencia y adjunta tu CV.",
+      to: "rrhh@cecinaschillan.cl",
+      cc: "",
+      subject: "Postulación / Recursos Humanos - Cecinas Chillán",
+      fieldsId: "fields-rrhh"
+    },
+    marketing: {
+      title: "Marketing y Comunicaciones",
+      text: "Solicitudes de prensa, merchandising, colaboraciones, alianzas, entrevistas, eventos, material gráfico, auspicios y marca.",
+      note: "Indica el tipo de solicitud, organización, objetivo, fecha estimada, canal y link de referencia.",
+      to: "marketing@cecinaschillan.cl",
+      cc: "",
+      subject: "Solicitud Marketing y Comunicaciones - Cecinas Chillán",
+      fieldsId: "fields-marketing"
+    },
+    calidad: {
+      title: "Control de Calidad / Reclamos",
+      text: "Reclamos, observaciones de producto, trazabilidad, boleta, lugar de compra y fotografías del producto.",
+      note: "Completa los datos del producto y adjunta fotografías de boleta, etiqueta, empaque y producto.",
+      to: "alejandroguzman@cecinaschillan.cl",
+      cc: "",
+      subject: "Control de Calidad / Reclamo - Cecinas Chillán",
+      fieldsId: "fields-calidad"
+    },
+    adquisiciones: {
+      title: "Adquisiciones / Proveedores",
+      text: "Presentación de productos, insumos, servicios u ofertas para la fábrica.",
+      note: "Presenta tu empresa, producto o servicio, categoría, cobertura y catálogo o sitio web.",
+      to: "proveedores@cecinaschillan.cl",
+      cc: "jorgecastillo@cecinaschillan.cl",
+      subject: "Adquisiciones / Proveedores - Cecinas Chillán",
+      fieldsId: "fields-adquisiciones"
+    }
+  };
+
+  function getValue(selector) {
+    const input = document.querySelector(selector);
+    return input ? input.value.trim() : "";
+  }
+
+  function getCheckedProducts() {
+    const checked = document.querySelectorAll("#pedido-productos input[type='checkbox']:checked");
+    return Array.from(checked).map(function(item) {
+      return item.value;
+    }).join(", ");
+  }
+
+  function getFileName(selector) {
+    const input = document.querySelector(selector);
+
+    if (!input || !input.files || !input.files.length) {
+      return "";
+    }
+
+    return Array.from(input.files).map(function(file) {
+      return file.name;
+    }).join(", ");
+  }
+
+  function setActiveRequiredFields(activeBlock) {
+    areaFieldBlocks.forEach(function(block) {
+      const fields = block.querySelectorAll("[data-area-required]");
+
+      fields.forEach(function(field) {
+        field.removeAttribute("required");
+      });
+    });
+
+    if (!activeBlock) {
+      return;
+    }
+
+    const activeFields = activeBlock.querySelectorAll("[data-area-required]");
+
+    activeFields.forEach(function(field) {
+      field.setAttribute("required", "required");
+    });
+  }
+
+  function updateContactArea() {
+    const selectedArea = contactArea.value;
+    const config = contactConfig[selectedArea];
+
+    areaFieldBlocks.forEach(function(block) {
+      block.hidden = true;
+    });
+
+    if (!config) {
+      setActiveRequiredFields(null);
+
+      areaTitle.textContent = "Selecciona un motivo";
+      areaText.textContent = "Aquí aparecerá una descripción del tipo de solicitud que puedes realizar.";
+      areaNote.textContent = "Completa todos los campos solicitados para enviar correctamente tu consulta.";
+
+      return;
+    }
+
+    const activeBlock = document.querySelector("#" + config.fieldsId);
+
+    if (activeBlock) {
+      activeBlock.hidden = false;
+    }
+
+    setActiveRequiredFields(activeBlock);
+
+    areaTitle.textContent = config.title;
+    areaText.textContent = config.text;
+    areaNote.textContent = config.note;
+  }
+
+  function validateProductsSelection() {
+    const selectedArea = contactArea.value;
+
+    if (selectedArea !== "pedidos") {
+      return true;
+    }
+
+    const productChecks = document.querySelectorAll("#pedido-productos input[type='checkbox']");
+    const hasSelectedProduct = Array.from(productChecks).some(function(item) {
+      return item.checked;
+    });
+
+    if (!hasSelectedProduct) {
+      productChecks[0].setCustomValidity("Selecciona al menos un producto de interés.");
+      productChecks[0].reportValidity();
+
+      return false;
+    }
+
+    productChecks.forEach(function(item) {
+      item.setCustomValidity("");
+    });
+
+    return true;
+  }
+
+  contactArea.addEventListener("change", updateContactArea);
+
+  document.querySelectorAll("#pedido-productos input[type='checkbox']").forEach(function(item) {
+    item.addEventListener("change", function() {
+      document.querySelectorAll("#pedido-productos input[type='checkbox']").forEach(function(check) {
+        check.setCustomValidity("");
+      });
+    });
+  });
+
+  contactForm.addEventListener("submit", function(event) {
+    event.preventDefault();
+
+    const selectedArea = contactArea.value;
+    const config = contactConfig[selectedArea];
+
+    if (!config) {
+      contactArea.focus();
+      return;
+    }
+
+    if (!contactForm.checkValidity()) {
+      contactForm.reportValidity();
+      return;
+    }
+
+    if (!validateProductsSelection()) {
+      return;
+    }
+
+    const bodyLines = [
+      "Hola Cecinas Chillán,",
+      "",
+      "Quiero realizar la siguiente solicitud:",
+      "",
+      "Motivo: " + config.title,
+      "",
+      "Datos de contacto:",
+      "Nombre de contacto: " + getValue("#contact-name"),
+      "Correo: " + getValue("#contact-email"),
+      "Teléfono: " + getValue("#contact-phone"),
+      "Comuna: " + getValue("#contact-commune"),
+      "Región: " + getValue("#contact-region"),
+      ""
+    ];
+
+    if (selectedArea === "pedidos") {
+      bodyLines.push(
+        "Datos comerciales:",
+        "Razón social: " + getValue("#pedido-razon-social"),
+        "RUT empresa: " + getValue("#pedido-rut"),
+        "Giro: " + getValue("#pedido-giro"),
+        "Región comercial: " + getValue("#pedido-region"),
+        "Comuna comercial: " + getValue("#pedido-comuna"),
+        "Correo para coordinación: " + getValue("#pedido-correo"),
+        "Productos de interés: " + getCheckedProducts(),
+        ""
+      );
+    }
+
+    if (selectedArea === "rrhh") {
+      bodyLines.push(
+        "Datos de postulación:",
+        "Cargo de interés: " + getValue("#rrhh-cargo"),
+        "Disponibilidad: " + getValue("#rrhh-disponibilidad"),
+        "Experiencia relacionada: " + getValue("#rrhh-experiencia"),
+        "Archivo CV seleccionado: " + getFileName("#rrhh-cv"),
+        "",
+        "Nota: adjuntar el CV antes de enviar este correo.",
+        ""
+      );
+    }
+
+    if (selectedArea === "marketing") {
+      bodyLines.push(
+        "Datos de solicitud:",
+        "Tipo de solicitud: " + getValue("#marketing-tipo"),
+        "Organización / medio / marca: " + getValue("#marketing-organizacion"),
+        "Fecha estimada: " + getValue("#marketing-fecha"),
+        "Canal o plataforma: " + getValue("#marketing-canal"),
+        "Objetivo de la solicitud: " + getValue("#marketing-objetivo"),
+        "Link de referencia: " + getValue("#marketing-link"),
+        ""
+      );
+    }
+
+    if (selectedArea === "calidad") {
+      bodyLines.push(
+        "Datos del reclamo:",
+        "Lugar de compra: " + getValue("#calidad-lugar"),
+        "Fecha de compra: " + getValue("#calidad-fecha"),
+        "Número de boleta: " + getValue("#calidad-boleta"),
+        "Producto observado: " + getValue("#calidad-producto"),
+        "Lote / vencimiento / etiqueta: " + getValue("#calidad-lote"),
+        "Detalle breve del problema: " + getValue("#calidad-detalle"),
+        "Foto boleta seleccionada: " + getFileName("#calidad-foto-boleta"),
+        "Foto etiqueta seleccionada: " + getFileName("#calidad-foto-etiqueta"),
+        "Foto empaque seleccionada: " + getFileName("#calidad-foto-empaque"),
+        "Foto producto seleccionada: " + getFileName("#calidad-foto-producto"),
+        "",
+        "Nota: adjuntar fotografías de boleta, etiqueta, empaque y producto antes de enviar este correo.",
+        ""
+      );
+    }
+
+    if (selectedArea === "adquisiciones") {
+      bodyLines.push(
+        "Datos de proveedor:",
+        "Empresa proveedora: " + getValue("#adq-empresa"),
+        "RUT empresa: " + getValue("#adq-rut"),
+        "Producto o servicio ofrecido: " + getValue("#adq-servicio"),
+        "Categoría: " + getValue("#adq-categoria"),
+        "Zona de cobertura: " + getValue("#adq-cobertura"),
+        "Sitio web o catálogo: " + getValue("#adq-link"),
+        ""
+      );
+    }
+
+    bodyLines.push(
+      "Mensaje:",
+      getValue("#contact-message"),
+      "",
+      "Quedo atento/a."
+    );
+
+    const params = new URLSearchParams();
+
+    params.set("subject", config.subject);
+    params.set("body", bodyLines.join("\n"));
+
+    if (config.cc) {
+      params.set("cc", config.cc);
+    }
+
+    window.location.href = "mailto:" + config.to + "?" + params.toString();
+  });
+
+  updateContactArea();
+</script>
+
+<!-- SCRIPT AÑO ACTUAL
+     Actualiza textos puntuales que usen #cc-current-year.
+-->
+<script>
+  const yearElement = document.querySelector("#cc-current-year");
+
+  if (yearElement) {
+    yearElement.textContent = new Date().getFullYear();
+  }
+</script>
+
+
+<!-- SCRIPT AÑOS DE TRADICIÓN
+     Calcula automáticamente los años desde 1987 año a año.
+-->
+<script>
+  document.querySelectorAll("[data-start-year]").forEach(function (element) {
+    const startYear = Number(element.dataset.startYear);
+    const currentYear = new Date().getFullYear();
+
+    if (!Number.isNaN(startYear)) {
+      element.textContent = currentYear - startYear;
+    }
+  });
+</script>
+
+
+<!-- SCRIPT CURSOR ANIMADO
+     Activa el cursor personalizado en desktop y lo desactiva en pantallas táctiles.
+-->
+<script>
+  (function () {
+    const dot = document.querySelector(".cc-cursor-dot");
+    const ring = document.querySelector(".cc-cursor-ring");
+
+    if (!dot || !ring || window.matchMedia("(pointer: coarse)").matches) {
+      return;
+    }
+
+    document.documentElement.classList.add("cc-custom-cursor");
+
+    let mouseX = window.innerWidth / 2;
+    let mouseY = window.innerHeight / 2;
+    let ringX = mouseX;
+    let ringY = mouseY;
+
+    function moveCursor(event) {
+      mouseX = event.clientX;
+      mouseY = event.clientY;
+
+      dot.style.transform = "translate3d(" + mouseX + "px," + mouseY + "px,0) translate(-50%, -50%)";
+    }
+
+    function animateRing() {
+      ringX += (mouseX - ringX) * 0.18;
+      ringY += (mouseY - ringY) * 0.18;
+
+      ring.style.transform = "translate3d(" + ringX + "px," + ringY + "px,0) translate(-50%, -50%)";
+      requestAnimationFrame(animateRing);
+    }
+
+    document.addEventListener("mousemove", moveCursor, { passive: true });
+    animateRing();
+
+    const hoverSelectors = "a, button, label[for], input, select, textarea, .product-card-image, [role='button']";
+
+    document.addEventListener("mouseover", function (event) {
+      if (event.target.closest(hoverSelectors)) {
+        document.documentElement.classList.add("cc-cursor-hover");
+      }
+    });
+
+    document.addEventListener("mouseout", function (event) {
+      if (event.target.closest(hoverSelectors)) {
+        document.documentElement.classList.remove("cc-cursor-hover");
+      }
+    });
+  })();
+</script>
+
+<!-- SCRIPT PRODUCTOS / CATÁLOGO
+     Lee los productos desde el HTML de la sección:
+     #productos .cc-catalog-product-data article[data-category]
+     No cambia nombres, no borra productos y no guarda imágenes dentro del script.
+     Corrige la lectura de categorías como Pancetas y Salchichón aunque el data-category tenga variaciones.
+-->
+<script>
+(function () {
+  const whatsappUrl = "https://wa.me/message/2U6MPSKJ6G45N1";
+
+  const section = document.querySelector("#productos.cc-catalog-section");
+  const categoryContainer = section?.querySelector("#ccCatalogCategories");
+  const productDataContainer = section?.querySelector(".cc-catalog-product-data");
+  const prevCardEl = section?.querySelector("#ccCatalogPrev");
+  const mainCardEl = section?.querySelector("#ccCatalogMain");
+  const nextCardEl = section?.querySelector("#ccCatalogNext");
+  const dotsContainer = section?.querySelector("#ccCatalogDots");
+  const prevBtn = section?.querySelector("#ccCatalogPrevBtn");
+  const nextBtn = section?.querySelector("#ccCatalogNextBtn");
+
+  if (!section || !categoryContainer || !productDataContainer || !prevCardEl || !mainCardEl || !nextCardEl || !dotsContainer || !prevBtn || !nextBtn) {
+    console.warn("Catálogo Cecinas Chillán: faltan elementos HTML.");
+    return;
+  }
+
+  function normalize(value) {
+    return String(value || "")
+      .toLowerCase()
+      .normalize("NFD")
+      .replace(/[\u0300-\u036f]/g, "")
+      .replace(/ñ/g, "n")
+      .replace(/&/g, "y")
+      .replace(/[^a-z0-9]+/g, "")
+      .trim();
+  }
+
+  const categoryButtons = Array.from(categoryContainer.querySelectorAll(".cc-catalog-category[data-category]"));
+
+  const categoryNames = Object.fromEntries(
+    categoryButtons.map((button) => {
+      const label = button.querySelector("strong")?.textContent.trim() || button.textContent.replace("›", "").trim();
+      return [button.dataset.category, label];
+    })
+  );
+
+  const products = Array.from(productDataContainer.querySelectorAll("article[data-category]")).map((item) => {
+    const image = item.querySelector("img");
+    const title = item.querySelector("h3")?.textContent.trim() || "Producto";
+    const rawKey = item.dataset.category || "";
+
+    return {
+      rawKey,
+      keyNorm: normalize(rawKey),
+      name: title,
+      description: item.querySelector("p")?.textContent.trim() || "",
+      format: item.dataset.format || "Formato disponible",
+      imageSrc: image?.getAttribute("src") || "",
+      imageAlt: image?.getAttribute("alt") || title
+    };
+  });
+
+  let activeCategory = categoryButtons.find((button) => button.classList.contains("is-active"))?.dataset.category || categoryButtons[0]?.dataset.category || "";
+  let activeIndex = 0;
+
+  function modulo(index, length) {
+    return ((index % length) + length) % length;
+  }
+
+  function getCategoryLabel(categoryKey) {
+    return categoryNames[categoryKey] || categoryKey;
+  }
+
+  function productMatchesCategory(product, categoryKey) {
+    const activeNorm = normalize(categoryKey);
+    const productNorm = product.keyNorm;
+
+    if (!activeNorm || !productNorm) return false;
+    if (productNorm === activeNorm) return true;
+
+    /* Permite que "panceta" encuentre productos cargados como
+       "panceta y salchichón", sin cambiar el nombre visible. */
+    if (productNorm.includes(activeNorm) || activeNorm.includes(productNorm)) return true;
+
+    return false;
+  }
+
+  function getItems() {
+    return products.filter((product) => productMatchesCategory(product, activeCategory));
+  }
+
+  function createWhatsappLink(product) {
+    const message = `Hola, quiero consultar por ${product.name} (${product.format}) de Cecinas Chillán.`;
+    return `${whatsappUrl}?text=${encodeURIComponent(message)}`;
+  }
+
+  function setActiveCategory(categoryKey) {
+    activeCategory = categoryKey;
+    activeIndex = 0;
+
+    categoryButtons.forEach((button) => {
+      button.classList.toggle("is-active", button.dataset.category === activeCategory);
+    });
+
+    renderProducts();
+  }
+
+  function imageMarkup(product, loadingValue) {
+    return `<img src="${product.imageSrc}" alt="${product.imageAlt}" loading="${loadingValue}">`;
+  }
+
+  function createSideCard(product) {
+    return `
+      <div class="cc-catalog-side-thumb">
+        ${imageMarkup(product, "lazy")}
+      </div>
+
+      <div class="cc-catalog-side-body">
+        <span>${getCategoryLabel(activeCategory)}</span>
+        <strong>${product.name}</strong>
+        <p>${product.description}</p>
+      </div>
+    `;
+  }
+
+  function createMainCard(product) {
+    return `
+      <div class="cc-catalog-card-info">
+        <div class="cc-catalog-card-kicker">
+          <span>${getCategoryLabel(activeCategory)}</span>
+          <strong class="cc-catalog-featured">★ Destacado</strong>
+        </div>
+
+        <h3>${product.name}</h3>
+        <p>${product.description}</p>
+
+        <div class="cc-catalog-format">
+          <strong>${product.format}</strong>
+          <span>Formato disponible</span>
+        </div>
+
+        <div class="cc-catalog-actions">
+          <a class="cc-catalog-consult" href="${createWhatsappLink(product)}" target="_blank" rel="noopener noreferrer">
+            Consultar
+          </a>
+        </div>
+      </div>
+
+      <div class="cc-catalog-card-image">
+        ${imageMarkup(product, "eager")}
+      </div>
+    `;
+  }
+
+  function renderDots(items) {
+    dotsContainer.innerHTML = items.map((_, index) =>
+      `<button class="cc-catalog-dot ${index === activeIndex ? "is-active" : ""}" type="button" aria-label="Ver producto ${index + 1}"></button>`
+    ).join("");
+
+    Array.from(dotsContainer.querySelectorAll(".cc-catalog-dot")).forEach((dot, index) => {
+      dot.addEventListener("click", () => {
+        activeIndex = index;
+        renderProducts();
+      });
+    });
+  }
+
+  function renderProducts() {
+    const items = getItems();
+    const total = items.length;
+
+    if (!total) {
+      prevCardEl.innerHTML = "";
+      nextCardEl.innerHTML = "";
+      dotsContainer.innerHTML = "";
+      mainCardEl.innerHTML = `
+        <div class="cc-catalog-card-info">
+          <div class="cc-catalog-card-kicker"><span>${getCategoryLabel(activeCategory)}</span></div>
+          <h3>Sin productos visibles</h3>
+          <p>Revisa que los productos de esta categoría tengan el mismo data-category en el HTML.</p>
+        </div>
+      `;
+      return;
+    }
+
+    const currentProduct = items[modulo(activeIndex, total)];
+    const previousProduct = items[modulo(activeIndex - 1, total)];
+    const nextProduct = items[modulo(activeIndex + 1, total)];
+
+    prevCardEl.innerHTML = createSideCard(previousProduct);
+    mainCardEl.innerHTML = createMainCard(currentProduct);
+    nextCardEl.innerHTML = createSideCard(nextProduct);
+
+    renderDots(items);
+  }
+
+  categoryButtons.forEach((button) => {
+    button.addEventListener("click", () => setActiveCategory(button.dataset.category));
+  });
+
+  prevCardEl.addEventListener("click", () => {
+    const total = getItems().length;
+    if (!total) return;
+    activeIndex = modulo(activeIndex - 1, total);
+    renderProducts();
+  });
+
+  nextCardEl.addEventListener("click", () => {
+    const total = getItems().length;
+    if (!total) return;
+    activeIndex = modulo(activeIndex + 1, total);
+    renderProducts();
+  });
+
+  prevBtn.addEventListener("click", () => {
+    const total = getItems().length;
+    if (!total) return;
+    activeIndex = modulo(activeIndex - 1, total);
+    renderProducts();
+  });
+
+  nextBtn.addEventListener("click", () => {
+    const total = getItems().length;
+    if (!total) return;
+    activeIndex = modulo(activeIndex + 1, total);
+    renderProducts();
+  });
+
+  setActiveCategory(activeCategory);
+})();
+</script>
+
+
+
+
+
+</body>
+</html>
